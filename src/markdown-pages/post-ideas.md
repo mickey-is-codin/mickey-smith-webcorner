@@ -12,3 +12,7 @@ title: Post Ideas
    - Patient orientation classifier
    - Dinogram
    - Personal Site
+ - Tildeverse
+ - Machine learning roadmap
+ - Frontend dev roadmap
+ - Importance of text to the web

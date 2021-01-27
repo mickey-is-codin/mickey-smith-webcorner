@@ -1,18 +1,11 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 const Index: React.FC = () => {
   return (
     <>
+      <Navbar />
       <div className="bg-red-400">Hello</div>
-      <div>
-        Navbar
-        <ul className="list-disc list-inside m-2">
-          <li>Me</li>
-          <li>Posts</li>
-          <li>Projects</li>
-          <li>Resume</li>
-        </ul>
-      </div>
       <div>
         Banner
         <ul className="list-disc list-inside m-2">
