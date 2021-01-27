@@ -5,7 +5,7 @@ const Index: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-red-400">Hello</div>
+      <div className="">Hello</div>
       <div>
         Banner
         <ul className="list-disc list-inside m-2">
