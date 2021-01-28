@@ -27,7 +27,18 @@ module.exports = {
       purple: colors.violet,
       pink: colors.pink,
 
-      'theme-green': colors.green,
+      theme: {
+        1: '#f5fdc6',
+        2: '#f5c396',
+        3: '#d0b17a',
+        4: '#a89f68',
+        5: '#41521f',
+      },
+
+      themeBlack: {
+        1: '#403d34',
+        2: '#33312c',
+      },
     },
     spacing: {
       px: '1px',
