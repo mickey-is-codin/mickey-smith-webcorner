@@ -9,7 +9,7 @@ const NavbarTitle: React.FC<NavbarTitleProps> = (props) => {
   const { title } = props;
   return (
     <div className="flex-0 flex flex-col my-2 mx-4 py-auto text-center align-middle rounded-md bg-theme-3">
-      <div className="text-xl my-auto mx-2">{title}</div>
+      <div className="text-2xl my-auto mx-2">{title}</div>
     </div>
   );
 };
@@ -22,7 +22,7 @@ const LargeViewItem: React.FC<LargeViewItemProps> = (props) => {
   const { title, link } = props;
   return (
     <div className="flex-0 flex flex-col hidden lg:inline-flex mx-4 rounded-md my-2">
-      <div className="text-lg my-auto mx-2">
+      <div className="text-xl my-auto mx-2">
         <a href={link}>{title}</a>
       </div>
     </div>
@@ -47,7 +47,7 @@ interface SmallViewItemProps {
 const SmallViewItem: React.FC<SmallViewItemProps> = (props) => {
   const { title, link } = props;
   return (
-    <div className="">
+    <div className="my-8">
       <a href={link}>{title}</a>
     </div>
   );
@@ -83,14 +83,18 @@ const SmallViewItems: React.FC = () => {
       />
       {navbarOpen ? (
         <div
-          className="fixed top-0 left-0 h-screen w-screen z-50 text-theme-2 bg-themeBlack-2 bg-opacity-75"
+          className="fixed top-0 left-0 h-screen w-screen z-50 text-theme-2 text-3xl bg-themeBlack-2 bg-opacity-75"
           style={{ backdropFilter: 'blur(2px)' }}
         >
           <CloseNavbarButton onClose={() => setNavbarOpen(false)} />
-          <SmallViewItem title="Home" link="/" />
-          <SmallViewItem title="Posts" link="/posts" />
-          <SmallViewItem title="About Me" link="/" />
-          <SmallViewItem title="Resume" link="/" />
+          <div className="flex flex-col h-full">
+            <div className="flex-0 mt-24">
+              <SmallViewItem title="Home" link="/" />
+              <SmallViewItem title="Posts" link="/posts" />
+              <SmallViewItem title="About Me" link="/" />
+              <SmallViewItem title="Resume" link="/" />
+              </div>
+          </div>
         </div>
       ) : null}
     </div>
