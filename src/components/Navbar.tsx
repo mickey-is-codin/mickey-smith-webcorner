@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
 
+const PAGES = [
+  { title: 'Home', link: '/' },
+  { title: 'Posts', link: '/posts' },
+  { title: 'Resume', link: '/resume' },
+];
+
 interface NavbarTitleProps {
   title: string;
 };
@@ -32,10 +38,11 @@ const LargeViewItem: React.FC<LargeViewItemProps> = (props) => {
 const LargeViewItems: React.FC = () => {
   return (
     <div className="flex-0 flex flex-row mx-4 text-theme-2">
-      <LargeViewItem title="Home" link="/" />
-      <LargeViewItem title="Posts" link="/posts" />
-      <LargeViewItem title="About Me" link="/" />
-      <LargeViewItem title="Resume" link="/" />
+      {PAGES.map((page) => {
+        return (
+          <LargeViewItem title={page.title} link={page.link} key={page.title}/>
+        );
+      })}
     </div>
   );
 };
@@ -89,11 +96,12 @@ const SmallViewItems: React.FC = () => {
           <CloseNavbarButton onClose={() => setNavbarOpen(false)} />
           <div className="flex flex-col h-full">
             <div className="flex-0 mt-24">
-              <SmallViewItem title="Home" link="/" />
-              <SmallViewItem title="Posts" link="/posts" />
-              <SmallViewItem title="About Me" link="/" />
-              <SmallViewItem title="Resume" link="/" />
-              </div>
+            {PAGES.map((page) => {
+              return (
+                <SmallViewItem title={page.title} link={page.link} key={page.title} />
+              );
+            })}
+            </div>
           </div>
         </div>
       ) : null}

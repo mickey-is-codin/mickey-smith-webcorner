@@ -1,8 +1,12 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 export const Posts: React.FC = () => {
   return (
-    <div>Posts</div>
+    <div>
+      <Navbar />
+      <div>Posts</div>
+    </div>
   );
 };
 
