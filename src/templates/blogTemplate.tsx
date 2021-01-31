@@ -12,7 +12,7 @@ export const Template: React.FC<TemplateProps> = (props) => {
   return (
     <div>
       <Navbar />
-      <div className="bg-themeBlack-1 h-screen flex text-theme-2 justify-center">
+      <div className=" h-full flex text-theme-2 justify-center">
         <div className="markdown w-4/6 p-8">
           <h1>{frontmatter.title}</h1>
           <h2>{frontmatter.date}</h2>

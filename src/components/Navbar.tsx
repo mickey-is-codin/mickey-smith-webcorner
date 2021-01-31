@@ -14,8 +14,8 @@ interface NavbarTitleProps {
 const NavbarTitle: React.FC<NavbarTitleProps> = (props) => {
   const { title } = props;
   return (
-    <div className="flex-0 flex flex-col my-2 mx-4 py-auto text-center align-middle rounded-md bg-theme-3">
-      <div className="text-2xl my-auto mx-2">{title}</div>
+    <div className="flex-0 flex flex-col my-2 mx-4 py-auto text-center align-middle rounded-md">
+      <div className="text-2xl text-theme-2 my-auto mx-2">{title}</div>
     </div>
   );
 };
