@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "Mickey Smith Webcorner",
+    description: "Mickey Smith personal site and blog",
+    author: "Mickey Smith",
+    siteUrl: "https://main.d22ikbxrxft1oa.amplifyapp.com/",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
