@@ -4,7 +4,7 @@ import PageContainer from '../components/PageContainer';
 
 export const Posts: React.FC = (props) => {
   
-  const { data: { allMarkdownRemark: { nodes } } } = props;
+  const { data: { allMdx: { nodes } } } = props;
 
   return (
     <PageContainer>
@@ -34,7 +34,7 @@ export const Posts: React.FC = (props) => {
 
 export const query = graphql`
   query MyQuery {
-    allMarkdownRemark(
+    allMdx(
       filter: { 
         frontmatter: { 
           date: { 
