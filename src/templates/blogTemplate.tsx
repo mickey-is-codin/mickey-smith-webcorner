@@ -10,14 +10,6 @@ export const Template: React.FC<TemplateProps> = (props) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
-    // <div>
-    //   <Navbar />
-    //   <div className="h-full flex text-theme-2 justify-center">
-    //     <div className="markdown w-screen md:w-4/6 p-8">
-          
-    //     </div>
-    //   </div>
-    // </div>
     <PageContainer isMarkdown={true} >
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.date}</h2>

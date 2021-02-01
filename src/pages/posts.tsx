@@ -5,15 +5,8 @@ import PageContainer from '../components/PageContainer';
 export const Posts: React.FC = (props) => {
   
   const { data: { allMarkdownRemark: { nodes } } } = props;
+
   return (
-    // <div>
-    //   <Navbar />
-    //   <div className=" h-screen flex text-theme-2 justify-center">
-    //     <div className="w-4/6 p-8">
-          
-    //     </div>
-    //   </div>
-    // </div>
     <PageContainer>
       <h1 className="text-3xl">Posts</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3">
@@ -39,16 +32,32 @@ export const Posts: React.FC = (props) => {
 };
 
 export const query = graphql`
-  query PostsQuery {
-    allMarkdownRemark {
-    nodes {
-      frontmatter {
-        date(formatString: "MM/DD/yyyy")
-        title
-        slug
+  query MyQuery {
+    allMarkdownRemark(
+      filter: { 
+        frontmatter: { 
+          date: { 
+            ne: null
+          }
+          isBlogPost: { 
+            eq: true
+          }
+        }
+      }
+      sort: {
+        fields: [frontmatter___date]
+        order: DESC
+      }
+    ) {
+      nodes {
+        frontmatter {
+          date(formatString: "MM-DD-yyyy")
+          title
+          slug
+          isBlogPost
+        }
       }
     }
-  }
   }
 `;
 

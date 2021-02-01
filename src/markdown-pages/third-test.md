@@ -1,7 +1,7 @@
 ---
-slug: /blog/first-post
-date: 2021-01-26
-title: First Test Post
+slug: /blog/third-post
+date: 2021-01-31
+title: Third Test Post
 isBlogPost: true
 ---
 
