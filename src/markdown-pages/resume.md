@@ -27,10 +27,6 @@ title: Some Stuff I've Done
 # Projects
 ## Dinogram
  - AWS Amplify React + TypeScript web app
-## FitDB
- - AWS CDK React + TypeScript + Expo application
-## SimplyWild Photography Portfolio
- - AWS Amplify React + TypeScript web app
 
 # Education
 ## Purdue University

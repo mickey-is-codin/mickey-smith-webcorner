@@ -3,7 +3,7 @@ module.exports = {
     title: "Mickey Smith Webcorner",
     description: "Mickey Smith personal site and blog",
     author: "Mickey Smith",
-    siteUrl: "https://main.d22ikbxrxft1oa.amplifyapp.com/",
+    siteUrl: "https://main.d33jpt7udphr59.amplifyapp.com/",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
