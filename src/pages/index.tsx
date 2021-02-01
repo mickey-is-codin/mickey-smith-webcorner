@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-// Make a page component
-// Use it for blog posts and pages
+// Clean up
+// Blacklist for posts
 
 const Index: React.FC = () => {
   return (
