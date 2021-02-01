@@ -2,6 +2,7 @@
 slug: /blog/third-post
 date: 2021-01-31
 title: Third Test Post
+description: This is the third blog post.
 isBlogPost: true
 ---
 
