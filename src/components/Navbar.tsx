@@ -111,7 +111,7 @@ const SmallViewItems: React.FC = () => {
 
 export const Navbar: React.FC = () => {
   return (
-    <nav className="sticky top-0 flex flex-row justify-left bg-theme-5">
+    <nav className="sticky top-0 flex flex-row justify-left bg-theme-5 z-10">
       <NavbarTitle title="Mickey Smith" />
       <LargeViewItems />
       <SmallViewItems />
