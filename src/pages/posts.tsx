@@ -7,7 +7,7 @@ export const Posts: React.FC = (props) => {
   const { data: { allMdx: { nodes } } } = props;
 
   return (
-    <PageContainer>
+    <div>
       <h1 className="text-3xl">Posts</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {nodes.map((node: any) => {
@@ -28,12 +28,20 @@ export const Posts: React.FC = (props) => {
           );
         })}
       </div>
+    </div>
+  );
+};
+
+export const PostsPage: React.FC = (props) => {
+  return (
+    <PageContainer>
+      <Posts {...props} />
     </PageContainer>
   );
 };
 
 export const query = graphql`
-  query MyQuery {
+  query PostsQuery {
     allMdx(
       filter: { 
         frontmatter: { 
@@ -63,4 +71,4 @@ export const query = graphql`
   }
 `;
 
-export default Posts;
+export default PostsPage;
