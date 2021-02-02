@@ -1,4 +1,4 @@
-import { Experience } from './types';
+import { Experience, Project } from './types';
 
 export const RESUME: Experience[] = [
   {
@@ -64,4 +64,17 @@ export const RESUME: Experience[] = [
     link: 'https://www.cookmedical.com/aortic-intervention/',
     description: `I designed methods to more effectively test pediatric medical devices.`
   },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    title: "The Dinogram",
+    description: "A newsletter turned website about what came before us",
+    link: "https://www.dinogram.org/timeline",
+  },
+  {
+    title: "Foam-MRI",
+    description: "A Zettelkasten notes search tool",
+    link: "https://github.com/mickey-is-codin/foam-mri",
+  }
 ];
