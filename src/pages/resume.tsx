@@ -1,5 +1,7 @@
 import React from 'react';
 import PageContainer from '../components/PageContainer';
+import { IconContext } from 'react-icons';
+import { GrDocumentDownload } from 'react-icons/gr';
 
 interface ExperienceProps {
   title: string;
@@ -32,7 +34,18 @@ export const ExperienceCard: React.FC<ExperienceProps> = (props) => {
 export const Resume: React.FC = () => {
   return (
     <PageContainer>
-      <h1 className="text-3xl">Resume</h1>
+      <div className="flex my-8">
+        <h1 className="flex-0 text-3xl my-auto">Resume</h1>
+        <a 
+          className="flex-0 ml-auto p-4 transition duration-500 ease-in-out bg-theme-5 rounded-md hover:bg-green-700 hover:shadow-lg cursor-pointer transform hover:-translate-y-1 hover:-translate-x-1"
+          href={`mickey_smith_resume.pdf`}
+          download
+        >
+          <GrDocumentDownload
+            size={36}
+          />
+        </a>
+      </div>
       <ExperienceCard
         title="Tester"
         company="Test Company"
