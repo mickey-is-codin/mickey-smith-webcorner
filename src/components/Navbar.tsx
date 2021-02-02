@@ -4,7 +4,7 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 
 const PAGES = [
   { title: 'Home', link: '/' },
-  { title: 'Posts', link: '/posts' },
+  // { title: 'Posts', link: '/posts' },
   { title: 'Resume', link: '/resume' },
 ];
 
@@ -28,7 +28,7 @@ const LargeViewItem: React.FC<LargeViewItemProps> = (props) => {
   const { title, link } = props;
   return (
     <div className="flex-0 flex flex-col hidden lg:inline-flex mx-4 rounded-md my-2">
-      <div className="text-xl my-auto mx-2">
+      <div className="text-xl my-auto mx-2 hover:text-green-500">
         <a href={link}>{title}</a>
       </div>
     </div>
@@ -54,7 +54,7 @@ interface SmallViewItemProps {
 const SmallViewItem: React.FC<SmallViewItemProps> = (props) => {
   const { title, link } = props;
   return (
-    <div className="my-8">
+    <div className="my-8 hover:text-green-500">
       <a href={link}>{title}</a>
     </div>
   );
@@ -111,7 +111,7 @@ const SmallViewItems: React.FC = () => {
 
 export const Navbar: React.FC = () => {
   return (
-    <nav className="sticky top-0 flex flex-row justify-left bg-theme-5 z-10">
+    <nav className="sticky top-0 flex flex-row justify-left bg-theme-5 z-50">
       <NavbarTitle title="Mickey Smith" />
       <LargeViewItems />
       <SmallViewItems />
