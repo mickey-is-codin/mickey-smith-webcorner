@@ -2,18 +2,13 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PageContainer from '../components/PageContainer';
 
-// General overview of my experience and contact info
-// Hire me page that leads to resume page or download
-// Move posts to home page
-// Custom hooks and general cleanup for posts
-
 export const Posts: React.FC = (props) => {
-
-  const { data: { allMdx: { nodes } } } = props;
   
+  const { data: { allMdx: { nodes } } } = props;
+
   return (
-    <div>
-      <h1 className="text-3xl">Some Things I've Written About</h1>
+    <PageContainer>
+      <h1 className="text-3xl">Posts</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {nodes.map((node: any) => {
           const { frontmatter: { title, slug, date, description } } = node;
@@ -33,22 +28,12 @@ export const Posts: React.FC = (props) => {
           );
         })}
       </div>
-    </div>
-  );
-};
-
-const Index: React.FC = (props) => {
-  return (
-    <PageContainer>
-      <h1 className="text-3xl">My name is Mickey</h1>
-      Text that goes here
-      <Posts {...props} />
     </PageContainer>
   );
 };
 
 export const query = graphql`
-  query PostsQuery {
+  query MyQuery {
     allMdx(
       filter: { 
         frontmatter: { 
@@ -78,4 +63,4 @@ export const query = graphql`
   }
 `;
 
-export default Index;
+export default Posts;
