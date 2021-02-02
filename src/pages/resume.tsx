@@ -19,8 +19,8 @@ export const ExperienceCard: React.FC<Experience> = (props) => {
     <div className="my-4 py-4 transition duration-500 ease-in-out bg-theme-5 rounded-md hover:bg-green-700 hover:shadow-lg cursor-pointer transform hover:-translate-y-1 hover:-translate-x-1">
       <a href={link}>
         <div className="flex">
-          <div className="flex-0 text-xl mx-4"><h1>{term}</h1></div>
-          <div className="flex-1 text-lg"><h1>{jobTitle}</h1></div>
+          <div className="flex-0 text-xl mx-4 bg-themeBlack-1 rounded-md p-2"><h1>{term}</h1></div>
+          <div className="flex-1 text-xl my-auto"><h1>{jobTitle}</h1></div>
         </div>
         <p className="m-4">{description}</p>
       </a>

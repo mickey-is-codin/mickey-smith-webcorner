@@ -6,6 +6,7 @@ const PAGES = [
   { title: 'Home', link: '/' },
   { title: 'Posts', link: '/posts' },
   { title: 'Sites', link: '/sites' },
+  { title: 'Projects', link: '/projects' },
   { title: 'Resume', link: '/resume' },
 ];
 
