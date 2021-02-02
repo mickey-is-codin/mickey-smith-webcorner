@@ -1,32 +1,29 @@
 import React from 'react';
 import PageContainer from '../components/PageContainer';
-import { IconContext } from 'react-icons';
 import { GrDocumentDownload } from 'react-icons/gr';
+import { RESUME } from '../util/constants';
+import { Experience } from '../util/types';
 
-interface ExperienceProps {
-  title: string;
-  company: string;
-  start: string;
-  end: string;
-  bullets: string[];
-};
-export const ExperienceCard: React.FC<ExperienceProps> = (props) => {
+export const ExperienceCard: React.FC<Experience> = (props) => {
   const {
     title,
     company,
     start,
     end,
-    bullets,
+    link,
+    description,
   } = props;
+  const term = end ? `${start} - ${end}` : `${start}`;
   const jobTitle = `${title} at ${company}`;
-  const term = `${start} - ${end}`;
   return (
-    <div className="bg-theme-5 rounded-md">
-      <h1>{jobTitle}</h1>
-      <h3>{term}</h3>
-      {bullets.map((bullet) => {
-        return <p>{bullet}</p>
-      })}
+    <div className="my-4 py-4 transition duration-500 ease-in-out bg-theme-5 rounded-md hover:bg-green-700 hover:shadow-lg cursor-pointer transform hover:-translate-y-1 hover:-translate-x-1">
+      <a href={link}>
+        <div className="flex">
+          <div className="flex-0 text-xl mx-4"><h1>{term}</h1></div>
+          <div className="flex-1 text-lg"><h1>{jobTitle}</h1></div>
+        </div>
+        <p className="m-4">{description}</p>
+      </a>
     </div>
   );
 };
@@ -46,13 +43,7 @@ export const Resume: React.FC = () => {
           />
         </a>
       </div>
-      <ExperienceCard
-        title="Tester"
-        company="Test Company"
-        start="February 2020"
-        end="December 2021"
-        bullets={['bullet 1', 'bullet 2', 'bullet 3']}
-      />
+      {RESUME.map((experience, ix) => <ExperienceCard key={`exp-${ix}`} {...experience} />)}
     </PageContainer>
   )
 };
