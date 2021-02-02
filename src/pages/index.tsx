@@ -9,12 +9,19 @@ import Posts from '../components/Posts';
 // Markdown styling better
 
 const Index: React.FC = (props) => {
+  const postsLink = <a href="/posts" className="text-white">some things I've written</a>
+  const sitesLink = <a href="/sites" className="text-white">some sites I like</a>;
+  const projectsLink = <a href="/projects" className="text-white">bit</a>;
+  const resumeLink = <a href="/resume" className="text-white">me</a>;
   return (
     <PageContainer>
-      <div className="bg-themeBlack-2 rounded-lg m-12 p-12">
-        <h1 className="text-3xl">What This Site Is</h1>
-        <p>I wanted to create a website that feels more to me like the old web.</p>
-        <p>This site is a collection of content I've created, sites I like, and a bit about me.</p>
+      <h1 className="text-3xl">Mickey Smith - Software Developer</h1>
+      <div className="bg-themeBlack-2 rounded-lg my-8">
+        <h1 className="text-2xl py-4 px-2">What This Site Is</h1>
+        <div className="py-4 px-2">
+          <p>I wanted to create a personal site that embodies what the internet means to me.</p>
+          <p>It has {postsLink}, {sitesLink}, and a {projectsLink} about {resumeLink}.</p>
+        </div>
       </div>
       <Posts {...props} />
     </PageContainer>
