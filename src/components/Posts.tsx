@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Split out single post component
+// Improve look of post
+
 export const Posts: React.FC = (props) => {
   
   const { data: { allMdx: { nodes } } } = props;
