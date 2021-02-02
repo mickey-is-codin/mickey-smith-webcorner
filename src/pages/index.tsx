@@ -3,9 +3,11 @@ import { graphql } from 'gatsby';
 import PageContainer from '../components/PageContainer';
 
 // General overview of my experience and contact info
+// Web philosophy
 // Hire me page that leads to resume page or download
 // Move posts to home page
 // Custom hooks and general cleanup for posts
+// Just import posts component
 
 export const Posts: React.FC = (props) => {
 
@@ -25,11 +27,11 @@ export const Posts: React.FC = (props) => {
                 window.location.href=slug;
               }}
               key={`blog-post-${title}`}
-            >
+            ><a href={slug}>
               <div className="text-xl">{title}</div>
               <div className="text-md">{description}</div>
               <div className="text-md text-gray-400">{date ? `Published ${date}` : ''}</div>
-            </div>
+            </a></div>
           );
         })}
       </div>
@@ -40,8 +42,11 @@ export const Posts: React.FC = (props) => {
 const Index: React.FC = (props) => {
   return (
     <PageContainer>
-      <h1 className="text-3xl">My name is Mickey</h1>
-      Text that goes here
+      <div className="bg-themeBlack-2 rounded-lg m-12 p-12">
+        <h1 className="text-3xl">What This Site Is</h1>
+        <p>I wanted to create a website that feels more to me like the old web.</p>
+        <p>This site is a collection of content I've created, sites I like, and a bit about me.</p>
+      </div>
       <Posts {...props} />
     </PageContainer>
   );

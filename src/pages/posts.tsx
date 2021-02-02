@@ -20,11 +20,11 @@ export const Posts: React.FC = (props) => {
                 window.location.href=slug;
               }}
               key={`blog-post-${title}`}
-            >
+            ><a href={slug}>
               <div className="text-xl">{title}</div>
               <div className="text-md">{description}</div>
               <div className="text-md text-gray-400">{date ? `Published ${date}` : ''}</div>
-            </div>
+            </a></div>
           );
         })}
       </div>
