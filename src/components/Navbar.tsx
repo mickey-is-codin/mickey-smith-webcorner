@@ -5,6 +5,7 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 const PAGES = [
   { title: 'Home', link: '/' },
   { title: 'Posts', link: '/posts' },
+  { title: 'Sites', link: '/sites' },
   { title: 'Resume', link: '/resume' },
 ];
 

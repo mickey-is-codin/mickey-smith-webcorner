@@ -3,12 +3,10 @@ import { graphql } from 'gatsby';
 import PageContainer from '../components/PageContainer';
 import Posts from '../components/Posts';
 
-// General overview of my experience and contact info
+// General overview of me and contact info
 // Web philosophy
 // Hire me page that leads to resume page or download
-// Move posts to home page
-// Custom hooks and general cleanup for posts
-// Just import posts component
+// Markdown styling better
 
 const Index: React.FC = (props) => {
   return (
