@@ -15,7 +15,7 @@ export const Posts: React.FC = (props) => {
           const { frontmatter: { title, slug, date, description } } = node;
           return (
             <div 
-              className="transition duration-500 ease-in-out bg-theme-5 rounded-md h-24 m-4 p-2 hover:bg-green-700 hover:shadow-lg cursor-pointer transform hover:-translate-y-1 hover:-translate-x-1"
+              className="transition duration-500 ease-in-out bg-theme-5 rounded-md m-4 p-2 hover:bg-green-700 hover:shadow-lg cursor-pointer transform hover:-translate-y-1 hover:-translate-x-1"
               onClick={(e) => {
                 e.preventDefault();
                 window.location.href=slug;
