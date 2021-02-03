@@ -11,9 +11,19 @@ export const PageContainer: React.FC<PageContainerProps> = ({ isMarkdown = false
   const innerClassName = `w-screen md:w-4/6 p-8 ${isMarkdown ? 'markdown' : ''}`;
   return (
     <div>
-      <Helmet>
-        <title>Mickey Smith</title>
-      </Helmet>
+      <Helmet
+        title="Mickey Smith"
+        meta={[
+          {
+            name: 'description',
+            content: 'Personal website for Mickey Smith'
+          },
+          {
+            name: 'keywords',
+            content: 'frontend,dev,developer,react,js,javascript'
+          }
+        ]}
+      />
       <Navbar />
       <div className="relative h-full flex text-theme-2 justify-center z-20">
         <div className={innerClassName}>
