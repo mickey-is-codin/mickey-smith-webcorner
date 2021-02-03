@@ -38,5 +38,16 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Mickey Smith`,
+        short_name: `Mickey Smith`,
+        description: `Personal website for Mickey Smith`,
+        lang: `en`,
+        icon: `src/images/terminal.png`,
+        start_url: `/`,
+      },
+    },
   ],
 };
