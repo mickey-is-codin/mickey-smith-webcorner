@@ -17,7 +17,7 @@ const NavbarTitle: React.FC<NavbarTitleProps> = (props) => {
   const { title } = props;
   return (
     <div className="flex-0 flex flex-col my-2 mx-4 py-auto text-center align-middle rounded-md">
-      <div className="text-2xl text-theme-2 my-auto mx-2">{title}</div>
+      <div className="text-2xl text-theme-2 my-auto mx-2"><a href="/">{title}</a></div>
     </div>
   );
 };

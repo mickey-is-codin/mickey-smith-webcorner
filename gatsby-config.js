@@ -25,6 +25,14 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
-    "gatsby-plugin-postcss"
+    "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "UA-181946115-1"
+        ]
+      }
+    }
   ],
 };
