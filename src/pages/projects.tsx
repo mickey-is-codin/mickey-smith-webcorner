@@ -21,7 +21,7 @@ export const Projects: React.FC = () => {
   return (
     <PageContainer>
       <h1 className="text-3xl">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
        {PROJECTS.map((project, ix) => <ProjectCard key={`project-${ix}`} {...project} />)}
       </div>
     </PageContainer>
