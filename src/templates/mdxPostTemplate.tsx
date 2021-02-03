@@ -12,8 +12,10 @@ export const Template: React.FC<TemplateProps> = (props) => {
   const { frontmatter, body } = mdx;
   return (
     <PageContainer isMarkdown={true} >
-      <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
+      <div className="flex">
+        <div className="flex-1 text-3xl font-bold my-auto">{frontmatter.title}</div>
+        <div className="flex-0 text-sm my-auto">{frontmatter.date}</div>
+      </div>
       <MDXRenderer>{body}</MDXRenderer>
     </PageContainer>
   );
