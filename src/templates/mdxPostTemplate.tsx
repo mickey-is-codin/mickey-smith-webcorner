@@ -11,7 +11,6 @@ export const Template: React.FC<TemplateProps> = (props) => {
   const { data } = props;
   const { mdx } = data;
   const { frontmatter, body } = mdx;
-  console.log('frontmatter: ', frontmatter);
   const metadata: MetadataProp = {
     title: frontmatter.pageTitle,
     meta: [

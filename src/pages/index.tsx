@@ -72,8 +72,8 @@ const Index: React.FC = (props) => {
       <div className="flex flex-col sm:flex-row bg-themeBlack-2 rounded-lg my-8 p-8">
         <h2 className="flex-1 text-2xl my-auto text-center">A personal site for ...</h2>
         <div className="flex-1 my-auto text-center">
-          <PageLink href="/posts" linkText="posts I've written"/>
-          <PageLink href="/sites" linkText="sites I like"/>
+          <PageLink href="/blog" linkText="a blog"/>
+          <PageLink href="/sites" linkText="links to other sites I like"/>
           <PageLink href="/projects" linkText="projects I've made"/>
           <PageLink href="/resume" linkText="things I've done"/>
         </div>

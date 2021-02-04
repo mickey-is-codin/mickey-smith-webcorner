@@ -4,7 +4,7 @@ import PageContainer from '../components/PageContainer';
 import Posts from '../components/Posts';
 import { POSTS_METADATA } from '../util/constants';
 
-export const PostsPage: React.FC = (props) => {
+export const BlogPage: React.FC = (props) => {
   return (
     <PageContainer metadata={POSTS_METADATA} >
       <Posts {...props} />
@@ -13,7 +13,7 @@ export const PostsPage: React.FC = (props) => {
 };
 
 export const query = graphql`
-  query PostsQuery {
+  query BlogQuery {
     allMdx(
       filter: { 
         frontmatter: { 
@@ -43,4 +43,4 @@ export const query = graphql`
   }
 `;
 
-export default PostsPage;
+export default BlogPage;

@@ -15,7 +15,7 @@ export const PageContainer: React.FC<PageContainerProps> = (props) => {
     isMarkdown = false,
     children
   } = props;
-  const innerClassName = `w-screen md:w-4/6 p-8 ${isMarkdown ? 'markdown' : ''}`;
+  const innerClassName = `md:w-5/6 p-8 ${isMarkdown ? 'markdown' : ''}`;
   return (
     <div>
       <Helmet
@@ -23,7 +23,12 @@ export const PageContainer: React.FC<PageContainerProps> = (props) => {
         meta={meta}
       />
       <Navbar />
-      <div className="relative h-full flex text-theme-2 justify-center z-20">
+      <div
+        className="relative h-full flex text-theme-2 justify-center z-20 md:w-4/6 mx-2 md:mx-auto my-12 rounded-lg bg-gray-700 bg-opacity-50"
+        style={{
+          backdropFilter: 'blur(2px)'
+        }}
+      >
         <div className={innerClassName}>
           {children}
         </div>
@@ -31,6 +36,21 @@ export const PageContainer: React.FC<PageContainerProps> = (props) => {
       <div className="z-0">
         <Particles
           className="absolute top-0 left-0 w-full h-full"
+          // params={{
+          //   particles: {
+          //     color: {
+          //       value: '#0000ff'
+          //     },
+          //     line_linked: {
+          //       color: {
+          //         value: '#0000ff'
+          //       }
+          //     },
+          //     size: {
+          //       value: 2
+          //     }
+          //   }
+          // }}
         />
       </div>
     </div>
