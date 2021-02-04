@@ -24,7 +24,7 @@ export const PageContainer: React.FC<PageContainerProps> = (props) => {
       />
       <Navbar />
       <div
-        className="relative h-full flex text-theme-2 justify-center z-20 md:w-4/6 mx-2 md:mx-auto my-12 rounded-lg bg-gray-700 bg-opacity-50"
+        className="relative h-full flex text-theme-2 justify-center z-20 md:w-4/6 mx-2 md:mx-auto my-12 rounded-lg bg-themeBlack-2 bg-opacity-50"
         style={{
           backdropFilter: 'blur(2px)'
         }}
@@ -36,21 +36,6 @@ export const PageContainer: React.FC<PageContainerProps> = (props) => {
       <div className="z-0">
         <Particles
           className="absolute top-0 left-0 w-full h-full"
-          // params={{
-          //   particles: {
-          //     color: {
-          //       value: '#0000ff'
-          //     },
-          //     line_linked: {
-          //       color: {
-          //         value: '#0000ff'
-          //       }
-          //     },
-          //     size: {
-          //       value: 2
-          //     }
-          //   }
-          // }}
         />
       </div>
     </div>

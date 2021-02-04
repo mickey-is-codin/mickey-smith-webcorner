@@ -1,3 +1,4 @@
+import { IParticlesParams } from 'react-particles-js';
 import { Experience, Project, MetadataProp } from './types';
 
 export const RESUME: Experience[] = [
@@ -133,4 +134,20 @@ export const RESUME_METADATA: MetadataProp = {
       content: "mickey,smith,code,software,react,js,javascript",
     },
   ],
+};
+
+export const PARTICLE_PARAMS_LIGHT: IParticlesParams = {
+  particles: {
+    color: {
+      value: '#0000ff'
+    },
+    line_linked: {
+      color: {
+        value: '#0000ff'
+      }
+    },
+    size: {
+      value: 2
+    }
+  }
 };
