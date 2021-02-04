@@ -8,6 +8,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
 } from 'react-icons/ai';
+import { HOME_METADATA } from '../util/constants';
 
 // Markdown styling better
 // Class unification
@@ -21,7 +22,7 @@ const Index: React.FC = (props) => {
   const resumeLink = <a href="/resume" className="text-white hover:text-green-500">things I've done</a>;
 
   return (
-    <PageContainer>
+    <PageContainer metadata={HOME_METADATA} >
       <div className="flex flex-col lg:flex-row">
         <h1 className="flex-1 text-3xl">Mickey Smith - Software Developer</h1>
         <div className="flex-0 flex ml-auto">
@@ -31,7 +32,7 @@ const Index: React.FC = (props) => {
           <a href="https://www.linkedin.com/in/mickeysmith2300/"><AiFillLinkedin href="" className="flex-0 hover:bg-green-500 cursor-pointer mx-2 rounded-md" size={36} /></a>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row bg-themeBlack-2 rounded-lg my-8 p-8">
+3      <div className="flex flex-col sm:flex-row bg-themeBlack-2 rounded-lg my-8 p-8">
         <h2 className="flex-1 text-2xl my-auto text-center">A personal site for ...</h2>
         <div className="flex-1 my-auto text-center">
           <p className="my-2">{postsLink}</p>

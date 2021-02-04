@@ -12,3 +12,12 @@ export interface Project {
   description: string;
   link: string
 };
+
+export interface SubMetadata {
+  name: string;
+  content: string;
+};
+export interface MetadataProp {
+  title: string;
+  meta: SubMetadata[];
+};

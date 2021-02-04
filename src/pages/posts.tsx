@@ -2,10 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PageContainer from '../components/PageContainer';
 import Posts from '../components/Posts';
+import { POSTS_METADATA } from '../util/constants';
 
 export const PostsPage: React.FC = (props) => {
   return (
-    <PageContainer>
+    <PageContainer metadata={POSTS_METADATA} >
       <Posts {...props} />
     </PageContainer>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import PageContainer from '../components/PageContainer';
-import { PROJECTS } from '../util/constants';
+import { PROJECTS, PROJECTS_METADATA } from '../util/constants';
 import { Project } from '../util/types';
 
 export const ProjectCard: React.FC<Project> = (props) => {
@@ -19,7 +19,7 @@ export const ProjectCard: React.FC<Project> = (props) => {
 
 export const Projects: React.FC = () => {
   return (
-    <PageContainer>
+    <PageContainer metadata={PROJECTS_METADATA} >
       <h1 className="text-3xl">Projects</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2">
        {PROJECTS.map((project, ix) => <ProjectCard key={`project-${ix}`} {...project} />)}

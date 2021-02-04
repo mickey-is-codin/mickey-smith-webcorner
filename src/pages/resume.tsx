@@ -1,7 +1,7 @@
 import React from 'react';
 import PageContainer from '../components/PageContainer';
 import { GrDocumentDownload } from 'react-icons/gr';
-import { RESUME } from '../util/constants';
+import { RESUME, RESUME_METADATA } from '../util/constants';
 import { Experience } from '../util/types';
 
 export const ExperienceCard: React.FC<Experience> = (props) => {
@@ -30,7 +30,7 @@ export const ExperienceCard: React.FC<Experience> = (props) => {
 
 export const Resume: React.FC = () => {
   return (
-    <PageContainer>
+    <PageContainer metadata={RESUME_METADATA} >
       <div className="flex my-8">
         <h1 className="flex-0 text-3xl my-auto">Resume</h1>
         <a 
