@@ -9,36 +9,73 @@ import {
   AiFillLinkedin,
 } from 'react-icons/ai';
 import { HOME_METADATA } from '../util/constants';
+import { IconType } from 'react-icons/lib';
 
 // Markdown styling better
 // Class unification
 // Contact info and social media links
 // Links as constants to iterate
 
-const Index: React.FC = (props) => {
-  const postsLink = <a href="/posts" className="text-white hover:text-green-500">posts I've written</a>
-  const sitesLink = <a href="/sites" className="text-white hover:text-green-500">sites I like</a>;
-  const projectsLink = <a href="/projects" className="text-white hover:text-green-500">projects I've made</a>;
-  const resumeLink = <a href="/resume" className="text-white hover:text-green-500">things I've done</a>;
+interface PageLinkProps {
+  href: string;
+  linkText: string;
+};
+const PageLink: React.FC<PageLinkProps> = (props) => {
+  const { href, linkText } = props;
+  return (
+    <p className="my-2">
+      <a href={href} className="text-white hover:text-green-500">
+        {linkText}
+      </a>
+    </p>
+  );
+};
 
+interface SocialMediaIconProps {
+  href: string;
+  IconComponent: IconType;
+};
+const SocialMediaIcon: React.FC<SocialMediaIconProps> = (props) => {
+  const { href, IconComponent } = props;
+  const className = "flex-0 hover:bg-green-500 cursor-pointer mx-2 rounded-md";
+  return (
+    <a href={href}>
+      <IconComponent className={className} size={36} />
+    </a>
+  );
+};
+
+const Index: React.FC = (props) => {
   return (
     <PageContainer metadata={HOME_METADATA} >
       <div className="flex flex-col lg:flex-row">
         <h1 className="flex-1 text-3xl">Mickey Smith - Software Developer</h1>
         <div className="flex-0 flex ml-auto">
-          <a href="https://github.com/mickey-is-codin"><AiFillGithub className="flex-0 hover:bg-green-500 cursor-pointer mx-2 rounded-md" size={36} /></a>
-          <a href="https://twitter.com/mickey_is_codin"><AiFillTwitterCircle href="" className="flex-0 hover:bg-green-500 cursor-pointer mx-2 rounded-md" size={36} /></a>
-          <a href="https://www.instagram.com/mickey_is_codin/"><AiFillInstagram href="" className="flex-0 hover:bg-green-500 cursor-pointer mx-2 rounded-md" size={36} /></a>
-          <a href="https://www.linkedin.com/in/mickeysmith2300/"><AiFillLinkedin href="" className="flex-0 hover:bg-green-500 cursor-pointer mx-2 rounded-md" size={36} /></a>
+          <SocialMediaIcon 
+            href="https://github.com/mickey-is-codin"
+            IconComponent={AiFillGithub}
+          />
+          <SocialMediaIcon 
+            href="https://twitter.com/mickey_is_codin"
+            IconComponent={AiFillTwitterCircle}
+          />
+          <SocialMediaIcon 
+            href="https://www.instagram.com/mickey_is_codin/"
+            IconComponent={AiFillInstagram}
+          />
+          <SocialMediaIcon 
+            href="https://www.linkedin.com/in/mickeysmith2300/"
+            IconComponent={AiFillLinkedin}
+          />
         </div>
       </div>
-3      <div className="flex flex-col sm:flex-row bg-themeBlack-2 rounded-lg my-8 p-8">
+      <div className="flex flex-col sm:flex-row bg-themeBlack-2 rounded-lg my-8 p-8">
         <h2 className="flex-1 text-2xl my-auto text-center">A personal site for ...</h2>
         <div className="flex-1 my-auto text-center">
-          <p className="my-2">{postsLink}</p>
-          <p className="my-2">{sitesLink}</p>
-          <p className="my-2">{projectsLink}</p>
-          <p className="my-2">{resumeLink}</p>
+          <PageLink href="/posts" linkText="posts I've written"/>
+          <PageLink href="/sites" linkText="sites I like"/>
+          <PageLink href="/projects" linkText="projects I've made"/>
+          <PageLink href="/resume" linkText="things I've done"/>
         </div>
       </div>
       <Posts {...props} />
