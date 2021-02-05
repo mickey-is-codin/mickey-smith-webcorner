@@ -32,7 +32,7 @@ export const ProgressRing: React.FC<ProgressRingProps> = (props) => {
   }, []);
 
   const progressRatio = scrollPosition / height;
-  const progress = isNaN(progressRatio) ? 0 : progressRatio;
+  const progress = isNaN(progressRatio) ? 0 : Math.min(Math.max(progressRatio, 0), 1);
 
   const normRadius = radius - stroke * 2;
   const circumference = 2 * Math.PI * normRadius;
