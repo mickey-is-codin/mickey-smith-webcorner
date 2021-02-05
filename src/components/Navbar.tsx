@@ -1,18 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
-
-import '../styles/navbar.css';
+import { PAGES } from '../util/constants';
 
 // Need huge cleanup here
-
-const PAGES = [
-  { title: 'Home', link: '/' },
-  { title: 'Blog', link: '/blog' },
-  { title: 'Sites', link: '/sites' },
-  { title: 'Projects', link: '/projects' },
-  { title: 'Resume', link: '/resume' },
-];
 
 interface ProgressRingProps {
   radius: number;
@@ -47,7 +38,7 @@ export const ProgressRing: React.FC<ProgressRingProps> = (props) => {
       width={radius * 2}
     >
       <circle
-        stroke="white"
+        stroke="#f5c396"
         fill="transparent"
         strokeWidth={ stroke }
         strokeDasharray={ circumference + ' ' + circumference }
@@ -56,6 +47,25 @@ export const ProgressRing: React.FC<ProgressRingProps> = (props) => {
         cx={ radius }
         cy={ radius }
       />
+      <g
+        className="chart-text"
+        style={{ transform: 'translateY(0.25em)' }}
+      >
+        <text
+          x="52%"
+          y="56%"
+          className="chart-number"
+          style={{
+            fill: '#f5c396',
+            fontSize: '0.8em',
+            lineHeight: '1',
+            textAnchor: 'middle',
+            transform: 'translateY(-0.25em)'
+          }}
+        >
+          {Math.round(progress * 100)}%
+        </text>
+      </g>
     </svg>
   );
 };

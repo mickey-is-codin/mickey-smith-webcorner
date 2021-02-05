@@ -151,3 +151,11 @@ export const PARTICLE_PARAMS_LIGHT: IParticlesParams = {
     }
   }
 };
+
+export const PAGES = [
+  { title: 'Home', link: '/' },
+  { title: 'Blog', link: '/blog' },
+  { title: 'Sites', link: '/sites' },
+  { title: 'Projects', link: '/projects' },
+  { title: 'Resume', link: '/resume' },
+];
