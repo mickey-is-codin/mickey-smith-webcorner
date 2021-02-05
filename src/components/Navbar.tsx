@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
 
+import '../styles/navbar.css';
+
 // Need huge cleanup here
 
 const PAGES = [
@@ -15,15 +17,16 @@ const PAGES = [
 interface ProgressRingProps {
   radius: number;
   stroke: number;
-  progress: number;
 };
 export const ProgressRing: React.FC<ProgressRingProps> = (props) => {
   const { radius, stroke } = props;
 
-  const [ height, setHeight ] = useState(0);
-  const [ scrollPosition, setProgress ] = useState(0);
+  const [ height, setHeight ] = useState(1);
+  const [ scrollPosition, setScrollPosition ] = useState(0);
 
-  const handleScroll = () => setProgress(window.pageYOffset);
+  const handleScroll = () => {
+    setTimeout(() => setScrollPosition(window.pageYOffset), 5);
+  };
 
   useEffect(() => {
     setHeight(document.documentElement.scrollHeight - document.documentElement.clientHeight);
@@ -48,7 +51,7 @@ export const ProgressRing: React.FC<ProgressRingProps> = (props) => {
         fill="transparent"
         strokeWidth={ stroke }
         strokeDasharray={ circumference + ' ' + circumference }
-        style={ { strokeDashoffset } }
+        style={{ strokeDashoffset }}
         r={ normRadius }
         cx={ radius }
         cy={ radius }
@@ -76,7 +79,7 @@ interface LargeViewItemProps {
 const LargeViewItem: React.FC<LargeViewItemProps> = (props) => {
   const { title, link } = props;
   return (
-    <div className="flex-0 flex flex-col hidden lg:inline-flex mx-4 rounded-md my-2">
+    <div className="flex-0 flex-col hidden lg:inline-flex mx-4 rounded-md my-2">
       <div className="text-xl my-auto mx-2 hover:text-green-500">
         <a href={link}>{title}</a>
       </div>
@@ -146,7 +149,6 @@ const SmallViewItems: React.FC = () => {
         <ProgressRing
           radius={34}
           stroke={4}
-          progress={90}
         />
       </div>
       <GiHamburgerMenu 
