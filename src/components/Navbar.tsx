@@ -20,13 +20,13 @@ interface ProgressRingProps {
 export const ProgressRing: React.FC<ProgressRingProps> = (props) => {
   const { radius, stroke } = props;
 
-  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
+  const [ height, setHeight ] = useState(0);
   const [ scrollPosition, setProgress ] = useState(0);
 
   const handleScroll = () => setProgress(window.pageYOffset);
 
   useEffect(() => {
+    setHeight(document.documentElement.scrollHeight - document.documentElement.clientHeight);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
