@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
 
+// Need huge cleanup here
+
 const PAGES = [
   { title: 'Home', link: '/' },
   { title: 'Blog', link: '/blog' },
