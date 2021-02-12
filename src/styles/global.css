@@ -5,6 +5,8 @@
 body {
   background-color: #403d34;
   /* background-color: #fffffb; */
+  /* font-family: "Futura", georgia, serif; */
+  font-family: "Open Sans";
 }
 
 /* Markdown Styles */

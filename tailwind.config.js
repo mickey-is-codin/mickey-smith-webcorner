@@ -30,7 +30,8 @@ module.exports = {
       // Green
       theme: {
         1: '#f5fdc6',
-        2: '#f5c396',
+        // 2: '#f5c396',
+        2: '#eae4f0',
         3: '#d0b17a',
         4: '#a89f68',
         5: '#41521f',

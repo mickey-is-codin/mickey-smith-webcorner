@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Props, useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { PAGES } from '../util/constants';
@@ -97,17 +97,21 @@ const LargeViewItem: React.FC<LargeViewItemProps> = (props) => {
   );
 };
 
-const LargeViewItems: React.FC = () => {
+interface LargeViewItemsProps {
+  progressRing: boolean;
+};
+const LargeViewItems: React.FC<LargeViewItemsProps> = (props) => {
+  const { progressRing } = props;
   return (
     <div className="flex-0 flex flex-row mx-4 text-theme-2">
-      <div
+      {progressRing ? (<div
         className="fixed top-24 left-4 z-40 hidden lg:inline-flex"
       >
         <ProgressRing
           radius={34}
           stroke={4}
         />
-      </div>
+      </div>) : null}
       {PAGES.map((page) => {
         return (
           <LargeViewItem title={page.title} link={page.link} key={page.title}/>
@@ -147,20 +151,24 @@ const CloseNavbarButton: React.FC<CloseNavbarProps> = (props) => {
   );
 };
 
-const SmallViewItems: React.FC = () => {
+interface SmallViewItemsProps {
+  progressRing: boolean;
+};
+const SmallViewItems: React.FC<SmallViewItemsProps> = (props) => {
+  const { progressRing } = props;
   const [ navbarOpen, setNavbarOpen ] = useState(false);
   return (
     <div 
       className="flex-0 ml-auto visible lg:invisible mx-4 my-2 p-2 rounded-md text-center bg-theme-3"
     >
-      <div
+      {progressRing ? (<div
         className="fixed top-0 right-24 z-40"
       >
         <ProgressRing
           radius={34}
           stroke={4}
         />
-      </div>
+      </div>) : null}
       <GiHamburgerMenu 
         size={36}
         className=""
@@ -187,12 +195,16 @@ const SmallViewItems: React.FC = () => {
   );
 };
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  progressRing: boolean;
+};
+export const Navbar: React.FC<NavbarProps> = (props) => {
+  const { progressRing } = props;
   return (
     <nav className="sticky top-0 flex flex-row justify-left bg-theme-5 z-30">
       <NavbarTitle title="Mickey Smith" />
-      <LargeViewItems />
-      <SmallViewItems />
+      <LargeViewItems progressRing={progressRing} />
+      <SmallViewItems progressRing={progressRing} />
     </nav>
   );
 };

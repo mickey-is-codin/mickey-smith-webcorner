@@ -25,7 +25,7 @@ export const Template: React.FC<TemplateProps> = (props) => {
     ]
   };
   return (
-    <PageContainer isMarkdown={true} metadata={metadata} >
+    <PageContainer isMarkdown={true} metadata={metadata} progressRing={true}>
       <div className="flex">
         <div className="flex-1 text-3xl font-bold my-auto">{frontmatter.title}</div>
         <div className="flex-0 text-sm my-auto">{frontmatter.date}</div>
