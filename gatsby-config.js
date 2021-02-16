@@ -7,13 +7,15 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-postcss",
     "gatsby-plugin-sitemap",
+    "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: `${__dirname}/src/pages`,
       },
       __key: "pages",
     },
@@ -24,8 +26,6 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
-    "gatsby-transformer-remark",
-    "gatsby-plugin-postcss",
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
