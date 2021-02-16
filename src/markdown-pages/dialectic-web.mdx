@@ -8,172 +8,160 @@ isBlogPost: true
 tags: dialectic, web3.0
 ---
 
-# Outline
+## Introduction
+I've been thinking about the internet a lot lately. Trying to parse out what things I like from the web and what patterns I think underly all incarnations of the internet. To try to figure out where the web will go in the future I've been thinking on some possible lenses through which to view the history of the internet.
 
-## How the old web can bring mindfulness to web 3.0
+![Taijitu symbol - header](../images/blog/dialectic-web/taijitu.jpg)
 
-### Thesis, or the Yang of Web 1.0
- - Sites that have survived since Web 1.0 or embody old web principles
-   - Hacker News
-     - Sometimes simple is the most robust
-     - Compare with early reddit
-   - Textfiles
-     - The internet is for sharing files
-     - *Any* files
-   - Phrack
-     - Publications can be more persistent
-   - Tildes
-     - Social media can be content-driven
-     - Centralization used to mean one server had lots of services
-     - Now we see centralization as one service being monopolized
- - The Zen of raw text
-   - Accessibility
-   - Long form narrative vs. feeds
-   - Stream of consciousness format (blogs felt like journaling)
-### Antithesis, or the Yin of Web 2.0
- - Digital minimalism
-   - The rise of the div
-   - User experience as first-class citizen
- - Tech that embodies Web 2.0
-   - Social Media
-     - Facebook
-     - Twitter
-     - Show what Reddit looks like now
-   - Hosting (hardware as a service)
-     - AWS
-     - GCP
-     - Azure
- - The Zen of a good user experience
-### Synthesis, or the Taiji of Web 3.0
- - What the hell does Web 3.0 mean?
- - What are some technologies bridging the gap to Web 3.0?
-   - Machine Learning
-     - PyTorch
-     - Tensorflow/Keras
-     - OpenAI
-       - GPT3
-     - fast.ai
-   - IoT & Home electronics
-     - Consumer hardware
-       - Arduino
-       - Particle
-       - Raspberry Pi
-     - The right to repair
-   - Semantic Web
-     - Why to move away from the div
-       - Accessibility
-       - The right to scrape
-     - How we can move away from the div
-   - Decentralization
-     - Technologies
-       - Torrenting
-         - Just as machine learning has been around for decades
-         - Decentralization is nothing new
-         - The opportunity to explore is just becoming more mainstream
-       - IPFS
-       - Solid
-       - Mastodon
-       - Cryptocurrency
-     - Compare with the old web
-       - Pioneering feel
-       - Difficulty of entry currently
-       - Mostly tech personalities
+[Dialectical monism](https://en.wikipedia.org/wiki/Dialectical_monism) is a school of thought that focuses on 2-part systems to analyze history (and other human-centered phenomena). The main idea is that some idea comes to be (thesis) and an oppositional idea counteracts it (antithesis), before they are both superceded by the final phenomenon resulting from both ideas existing in opposition (synthesis). One great example of an implementation of this analysis system that more people might be familiar with is  the idea of Yin, Yang, and the Taiji (the combined whole created from Yin and Yang). Taoism acknowledges that, while forces can seem to be in opposition, they are both necessary towards a shared whole and that whole is what we perceive in the end. This syncs nicely with the idea of dialectical monism and I've been pondering the internet with this framework for a bit now. I think the idea of Yin & Yang has some interesting parallels to the history of the internet. Specifically, the divisions known as Web 1.0, 2.0, and 3.0.
+
+## Web 1.0: Thesis
+
+Yang is considered to be *the active*, the driver of change that is rough around the edges. I think the early internet's pioneering and primordial feeling can analogize nicely with this raw driving change. I'll discuss some websites that are around today that I feel embody this nature of innovation for innovation's sake. Some of them have been around since Web 1.0, while others simply do a good job of conveying principles from that era of the web. I want to pick apart some of the ideas that have kept these sites around for so long or ideas that they embody from the early web.
+
+### Hacker News
+![Hacker News homepage]()
+
+The foremost example of a site that I think embodies the feeling of Web 1.0 and the early internet is Hacker News, YCombinator's news/forum site. YCombinator was founded in 2005 and Hacker News has seen a rise in use since then. That means that it's not necessarily an early internet site, but the principles of the site's design and content-delivery are rooted in the early web. It is no-nonsense, minimal CSS, and extremely text-driven news.
+
+Sometimes simplicity breeds robustness. The simplicity of Hacker News' site design is quite brilliant. It creates a brand for the site, embodies the philosophy of the organization, and allows for extreme accessibility. I can access the site from my laptop, tablet, phone, or text-based terminal browser. And with each of those devices I will be greeted with pretty much the exact same experience.
+
+The second you load up the site you can tell who the values of the designers and thus the audience for the site. Something about Hacker News can be odd for many first-time readers is the high density of information. Hacker News' homepage, on my 17 inch monitor, displays 25 articles. That is almost unheard of for a site on the modern web. It makes it clear that the site is not here to coddle a user. It exists to display news items and employs little frill when doing so. 
+
+Compare this with Reddit's early UI. Here is an image of [old.reddit.com](https://old.reddit.com/), a mirror of reddit that shows the current site's posts with Reddit's original UI:
+
+![Early Reddit site layout image]()
+
+We'll come back to this when we discuss Web 2.0. 
+
+Also as a sidenote, the [personal site of Paul Graham](http://paulgraham.com/), the founder of YCombinator, is another great homage to the simplistic design of the early web.
+
+### Textfiles
+![textfiles.com homepage]()
+
+Another site that offers a look into some of the principles of the early internet is [textfiles.com](http://textfiles.com/). [Jason Scott](https://en.wikipedia.org/wiki/Jason_Scott), a spokesman for [the Internet Archive](https://archive.org/) created and maintains the site. This is another site that offers not only a giant cache of text-based content, but a clear window into the philosophy of its curator.
+
+What can we learn about Scott's philosophy from this site? Well he certainly thinks that the internet was created to share files written by other humans. The entire site is dedicated to sharing text-based files. These range from [short stories](http://textfiles.com/stories/) to [Ham Radio how-tos](http://textfiles.com/hamradio/) The design follows accordingly because each content URL for this site is literally a simple *.txt (or other text-based) file. 
+
+The other principles that this site seems to highlights is that the internet is meant for sharing *any* files. And since the internet is meant for sharing thoughts through files, of course there will be thoughts or documents being shared which are controversial. Lots of the allure of textfiles.com comes from its nostalgic black-and-green design (when viewed in a visual web browser). The site is meant to propel a user back to the bygone days of the internet captured by The Matrix and make a user feel like they are kind of snooping around somewhere they shouldn't be. Reading the Anarchist Manifesto feels illicit and this feeling is exacerbated when you read the entire txt file presented without edit on a site that looks like a prop from the movie Hackers. 
+
+### Phrack
+![Phrack ezine homepage]()
+
+Phrack is an online magazine, or zine as they're sometimes called, first published in 1985. It famously platformed [The Hacker's Manifesto](http://phrack.org/issues/7/3.html) in 1986. The site still publishes issues consisting of staff- and community-written articles about web security and general topics in web infrastructure.
+
+The thing that's beautiful about Phrack is that it hasn't felt the need to update its design or its delivery methodology since its inception. Again, like Hacker News, the brand of the site lies in its almost luddite-esque desire to work well rather than be pretty. The site still serves the same purpose and gets updated every time there's a new issue. The experience of novelty within the site comes not from new designs around it, but from the new ideas that are published in the zine. Sometimes persistence of ideas and sites can be hard on the web, but the minimalism in Phrack's design and delivery strategy has allowed it to stay agile throughout all of the changes to the web since its founding. 
+
+### The Tildeverse
+The [tildeverse](https://tildeverse.org/) is a bit odd. It's federated group of websites. Well actually it would be more accurate to call it a federated group of servers. Web apps today typically offer a single service and all actions for the server are accomplished from within the website. Sites within the tildeverse are like web apps today, but the philosophy of the tildeverse is to bring more services to a single server. 
+
+[This video](https://tildeverse.org/) explains things better than I can do here.
+
+You can think of sites within the tildeverse like a storefront to a club. The public face of the organization is just one small piece of the actual enterprise, and real benefit comes from accessing member areas. Tilde sites offer membership via login credentials to access the server that holds their website. Once logged in, the server has BBS boards, IRC chatrooms, individual user blogs, gopher pages and blogs, radio stations, and programs created by the users to run on the server.
+
+Let's take a look at a single tilde site, [tilde.town](http://tilde.town/).
+
+![tilde.town homepage]()
+
+As we saw from the other sites, this homepage is pretty off-putting. But that's because this site isn't meant to just be viewed from the browser. If we have user access to the server (try it out, they're nice people and usually respond quick!) we can access all of the content being created by users on that server.
+
+Here's my homepage when I use ssh to login to the server:
+![My tilde.town login]()
+
+The main takeaway from the Tildeverse that I wanted to highlight is that it allows for centralization in a very different way that we usually see today. We know web centralization as a couple of companies that own massive server infrastructure which power lots of apps across the internet. Tilde sites are centralized in that users have access to a variety of services all in one place. Compare this to the modern web where a user from twitter interacting with someone on Facebook or Letterboxd would have to know the user's individual accounts on those sites to interact with them. Tildes allow the same users to interact across a myriad of services all contained in the same place. If you're interested in exploring these sites, check out the [Tildeverse site](https://tildeverse.org) or [SDF](http://sdf.org/) for an alternative. 
+
+Paul Ford, the inventor of [tilde.club](https://tilde.club/) has a great analogy in his [blog post about starting the server](https://medium.com/message/tilde-club-i-had-a-couple-drinks-and-woke-up-with-1-000-nerds-a8904f0a2ebf) that contrasts server use today with the idea of tilde servers:
+
+```
+Fast forward 20 years: Your typical “cloud” Unix server, designed in the 1970s to be a very social place, is today a ghost town with one or two factories still clanking in the town square—factories that receive our email, or accept our Instagram photos and store them, and manage our data. But there’s no one walking around and chatting downtown. Thus when people talk about “cloud computing” they are talking about millions of tiny ghost towns. Ironic, because what do people build on these ghost towns but social networks.
+```
+
+### The Zen of Raw Text
+So what kinds of patterns did we observe from these early web sites? 
+
+These sites are extremely robust. They found a way to create seriously lasting bastions of information by doing very little by way of design. This sort of philosophy can lead to a much longer persistence of ideas, which are ultimately the lifeblood of the internet.
+
+These sites are extremely accessible. I can view them on any device and get pretty much the exact same experience. If I were using a screen reader, the software being employed would doubtless have no trouble delivering me the content from these sites and I could consume the ideas exactly the same as someone using a brand new Macbook.
+
+These sites are based around text. Or at least, when images are used on one of these sites, they are the main focus of a page; that image represents the main piece of content for a page. Blog posts on these sites were a bit longer because there was a bit of difficulty in accessing and publishing on these sites. Once shared though, the ideas could have virtually infinite length because of the cheapness of expressing simple textual thoughts on the web. The result is that individual user content can be structured in a more stream of consciousness manner. Lots more raw materials can be thrown at the canvas of creativity. 
+
+Now I won't claim that longer = better 100% of the time when concerning a blog post or article on the web. But both consuming and generating a longer piece of media tends to be a bit more of a mindful and meditative process. Blogging in this manner and publishing content was likely a bit more like the journaling process than the content creation process that we see today.
+
+## Web 2.0: Antithesis
+
+There are some trends that I feel represent the modern web. I'll talk about two here. 
+
+### Social Media
+Social media was able to take one of the hardest-to-define principles of the early web and expand on it. That principle is the ease of content generation and the creation of a network with which to share that content. Anyone can easily sign up on Twitter today and immediately publish a thought that is available within their network and the entire internet. However, the main place that people are linked to these ideas are from other tweets. Facebook is an even more pure example of this encapsulation, since posts are not typically available from a browser or linkable except from within Facebook. Social media sites have become a bit of a wrapper around content; sort of a mini self-contained internet.
+
+In addition to this platform-specific idea encapsulation, the style of content is much different on the modern web. Content is much more visually-based and posts are typically shorter than average user posts from the early web. The purpose is two-fold: to allow a vaster portion of the public to share ideas by decreasing storage size, and to improve the user experience of the person consuming the content. It's far easier both to create a 285-character tweet and to read it than to read a long blog post or LiveJournal tnery. Content has a much more stream-like structure and is meant to be very easily digestible as such. 
+
+For an example of this multimedia-centric, stream-of-content approach take a look at Reddit's current UI:
+
+![Reddit current homepage]()
+
+Contrast that with the original UI shown earlier and we start to see what values have been selected for in the modern web and how users tend to consume content.
+
+This sort of UI and content presentation isn't a bad thing at all. It often inspires lateral thinking in content generation and makes for tremendous new additions to art and humor.
+
+### Centralized Hosting (Hardware as a service)
+The other pattern that demonstrates the state of the modern web, in my opinion, is the current state of web hosting. It's an industry that was, quite literally, created as a budded lifeform off of some of the first internet companies. It's no surprise that Amazon, Google, and Microsoft offer the largest cloud hosting infrastructure on the planet -- they were some of the most successful early adopters of the online business model. We're extremely lucky to have access to these hosting services and they make not only content publishing easier, but the entire process of creating platforms for online thought sharing. Sites are much more scalable now because of services offered as abstractions through services like AWS that allow databases to grow with userbases. So if we think about the web as a network we can consider that the modern web has several infrastructure nodes that make up the lionshare of the volume of sites.
+
+Finally, I want to talk a bit about the design decisions that have been selected for in the modern web. 
+
+### Digital Minimalism
+What I consider to be the modern web is the set of sites that have allowed user experience to become a first-class citizen. This has been accomplished over the years through an evolution of the web that has come to understand how the human brain interacts with websites. Sites are designed now to accommodate the user experience in a way that accomplishes a goal for the owner of the site while also maximizing satisfaction for the user. A perfect example of this digial minimalism approach is Google. The Google homepage is essentially a single search bar at its core. But it is also a canvas. There have been thousands of Google doodles over the years that have all fit around the functionally unchanged Google homepage. The modern web is characterized by this minimalism of design that allows for visual creativity.
+
+### JavaScript
+One feature that is worth noticing about the modern web is that, since the goal is expressiveness around the user experience, some of the semantics of the internet have been fudged a bit in order to focus on design. JavaScript was introduced to the web in 1995 but exploded throughout the early aughts when developers discovered it could be used to make the web responsive. Webpages became far more dynamic and allowed not only improved design to reach the web, but for that design to be responsive. The [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) became a data structure that developers could manipulate as they please and create a truly dynamic experience for a given webpage.
+
+### The Rise of the `<div>`
+How is JavaScript able to manipulate the web so effectively? Well one pattern that has emerged is the heavy use of the `<div>` tag in web development. JS is extremely effective at moving around and editing any type of DOM node; `<p>`s, `<ol>`s, etc. But the advantage of sticking items into `<div>` tags is that they become a much more ambiguous functional unit for a given webpage. A `<div>` represents "whatever I want to put here", rather than a semantic tag that explains what an element is. As such, most of the web you see today is build with `<div>`s. They're kind of like the lego blocks of the internet. 
+
+This design pattern isn't necessarily a bad thing on its face either. Heck, most of the design I do on the web prominently features `<div>`s. This shift from semantic tags to relying on `<div>`s came about, in large part because HTML tags were created edit text-forward sites like we saw in the last section. Hyper-**TEXT** Markup Language. But the internet today revolves around so much more than just text. Take this site, for example. There isn't an HTML tag that defines `<particle-background>`, so I (with help from [libary](https://www.npmjs.com/package/react-particles-js) maintainers!) had to get creative with `<div>`s.
+
+### The Zen of Good design
+Because of this increased demand for a visually pleasant user experience, design systems have been created and employed by corporations that have helped build the web. The web looks a lot better today because the psychology of advertising and user experience has been brought to the web from the world of marketing. 
+
+Businesses did not have much interest in having a presence on the early web, but now the opportunity for capital from the web has been made abundantly clear. This means, of course, that more of the internet is now devoted to advertising and controlling a user experience in a way that results in sales conversions. But it also means that everyman developers like myself have access to the same tools that corporations use to build the largest retail sites and markets in the world. Yes, corporations moving online meant that some space had to be carved out in the internet zeitgeist for these corporations to continue to sell ads and products. But at the same time corporations couldn't help but have the open-source pioneering spirit of the internet rub off on them in the process of moving their focuses online.
 
 
-https://www.fastcompany.com/90243936/exclusive-tim-berners-lee-tells-us-his-radical-new-plan-to-upend-the-world-wide-web
+## Web 3.0: Synthesis
 
-https://en.wikipedia.org/wiki/Dialectical_monism
+### Mindful Principles from Web 1.0 & 2.0
+The content generation process and the content consumption processes both required a fair amount of thoughtfulness which can be an extremely satisfying process. This isn't something that is completely missing from Web 2.0. You can still read longform articles. But they tend to be produced by groups coming from different mediums and as such tend to include paywalls. 
 
-https://en.wikipedia.org/wiki/Taijitu
+News sites are caught between a rock and a hard place. They must consider an ad-free experience to preserve the density of information that was found in print newspapers but also deliver that much information without a paywall. 
 
-https://solidproject.org/
+It's easier both cognitively and technologically for a user to read 5,000 words a day on Twitter, than it is for them to read the same amount spread out over a few blog posts or articles. This means that we consume ideas from other people much more like a stream than like a narrative. 
 
-https://ipfs.io/
+Single disparate thoughts create a bit of an unfulfilled feeling when browsing them for a long time, but they're  easy to consume and the lack of division between thoughts means this can be done for long periods of time without realizing that much time is passing. In my experiences though, eople tend to find more satisfaction from consuming a larger volume of ideas within a specific piece of media (like this blogpost hopefully). Larger ideas create an experience of following a narrative and reach a more satisfying conclusion. 
 
-https://joinmastodon.org/
+We're at an odd juncture for neuroscience on the web because we've made it incredible easy to consume a vast amount of information, but without the satisfaction that usually comes from doing so (such as reading a book or watching a movie). The human mind has been allowed to experience extremely thoughtfully designed visual narratives as we navigate sites on the modern web, but in the future I think this visual narrative can be combined with thoughtful narrative of text as well in a way that allows content to be satisfying over longer stretches of consumption. In a sense I hope to see a Web 3.0 that combines the most Zen principles of Web 1.0 and 2.0.
 
-https://www.youtube.com/watch?v=qK1mInnbfrU
+Let's talk about some tenets that may or may not embody Web 3.0 and how those technologies can best harness what we've learned about the experience of browsing the web.
 
+### Machine & Deep Learning
+Underpinning this mindfulness will be entirely new platforms for deliving content to users. Content suggestion has already been integrated into almost every platform we use on the web today via machine learning suggestion engines. This delivers content in a way that is extremely optimized to catch user attention, but I'm not sure that it leads to a diversity of content that leaves people most satisfied. 
 
--------
-
-# Article
-
-## How the old web can bring mindfulness to web 3.0
-
-### Thesis, or the Yang of Web 1.0
-
-Sites that have survived since Web 1.0 or embody old web principles. How can we know what principles from web 1.0 were best? Well, many of the sites are still around. They either serve some important function that demands continued maintenance, or they were designed in such a way as to allow persistence. 
-
-Hacker News. The foremost example of a site that I think embodies the feel of Web 1.0 is Hacker News, YCombinator's news and forum site. YCombinator was of course founded in 2005 and Hacker News has seen a rise in use after 2010, but the principles of the site are rooted in the early web. It is no-nonsense, minimal CSS, and extremely text-driven news. 
-
-Sometimes simple is the most robust. The simplicity of Hacker News' site design is quite brilliant. It creates a brand for the site, embodies the philosophy of the organization, and allows for extreme accessibility. I can access the site from my laptop, tablet, phone, or text-based terminal browser. And with each of those devices I will be greeted with pretty much the exact same experience.
-
-Lots of info per page. Something about that experience that can be a turnoff for many users accustomed to a more pleasant user experience embodied in web 2.0 is the high density of information. Hacker News' homepage, on my 17 inch monitor, displays 25 articles. That is almost unheard of for a site on the modern web. It makes it clear that the site is not here to coddle a user. It exists to display news items and engages little frill in doing so. 
-
-Compare with early reddit. Another site that used to have an extremely similar design philosophy was Reddit. Here is an image of old.reddit.com, a community-maintained mirror for the site that displays the UI for all current stories on reddit in its early UI incarnation. We'll come back to this when we discuss Web 2.0. 
-
-Textfiles. Another site that proffers a look into some of the principles that made the early internet great is textfiles.com. Jason Scott, the CEO of Internet Archive created and maintains the site. This is another site that shares not only the content it contains, but a clear window into the philosophy of its creator. 
-
-The internet is for sharing files. What can we learn about Scott's philosophy from this site? Well he certainly thinks that the internet was created to share files. The entire site is dedicated to sharing text-based files that are the pure distillation of an idea. The design follows accordingly because each content URL for this site is literally a simple *.txt file. 
-
-*Any* files. And since the internet is meant for sharing thoughts through files, of course there will be thoughts shared that are controversial. Lots of the allure of textfiles.com comes from its nostalgic black-and-green design (when viewed in a visual web browser). The site is meant to propel a user back to the bygone days of the internet captured by The Matrix. Reading the Anarchist Manifesto feels illicit and this feeling is exacerbated when you read the entire txt file presented without edit on a site that looks like a prop from the move Hackers. 
-
-Phrack. Phrack is an online magazine, or zine as they're sometimes called, for individuals in the IT industry and programmers in general. The site still publishes issues consisting of staff- and community-made articles about web security and general topics in web infrastructure.
-
-Publications can be more persistent. The thing that's beautiful about Phrack is that it hasn't felt the need to update its design or its delivery methodology since its inception. The site still serves the same purpose and gets updated every time there's a new issue. The novelty of the site comes not from new designs around it, but from new ideas being published in the zine. Sometimes persistence of ideas and sites can be hard on the web, but the minimalism in Phrack's design and delivery strategy has allowed it to stay agile throughout all of the changes to the web since its founding. 
-
-Tildes. The tildeverse is a federated group of websites. Well actually it would be more accurate to call it a federated group of servers. Web apps today typically have a single service that the site serves being generated by the server. But the philosophy of the tildeverse is to bring more services to a single server. You can think of it like a website that provides a public interface to a computer that users can login to in order to get the full experience. Once joined, the server has BBS boards, IRC chatrooms, individual user blogs, gopher pages and blogs, radio stations, and programs created by the users to run on the server.
-
-Social media can be content-driven. Let's take a look at a single tilde site, tilde.town.  So we're starting to notice a pattern forming. Viewed from the browser this site is pretty off-putting. But that's because this site isn't meant to just be viewed from the browser. People can request user access to the server (try it out, they're nice people and usually respond quick!) and then access all of the content being created by users on that server. [Here](https://www.youtube.com/watch?v=qK1mInnbfrU) is a great video that goes through the whole process. 
-
-Centralization used to mean one server had lots of services. The main takeaway from the Tildeverse that I wanted to highlight is that it used to allow for centralization in a very different way that we have today. Rather than have a couple of companies that own massive server infrastructure to power most of the apps we use today, tilde sites are centralized so that lots of users have access to a variety of services all in one place. Compare this to the modern web where a user from twitter interacting with someone on Facebook or Letterboxd would have to know the user's individual accounts on those sites to interact with them. Tildes allow the same users to interact across a myriad of services all contained in the same place. If you're interested in exploring these sites, check out the [Tildeverse site](https://tildeverse.org) or [SDF](http://sdf.org/) for an alternative. am
-
-The Zen of raw text. So what kinds of patterns did we observe on these early web sites? 
-   - Robustness. These sites were all extremely robust. They found a way to create seriously lasting design by doing very little. This sort of philosophy can lead to a much longer persistence of ideas, which are ultimately the functional unit of the internet. 
-   - Accessibility. All of these sites are extremely accessible. I can view them on any device and get pretty much the exact same experience. If I were using a screen reader, the software being employed would doubtless have no trouble delivering me the content from these sites. 
-   - Long form narrative vs. feeds. These sites are based around text. Or at least, when images are used on one of these sites, they are the main focus of a page; that image represents the main piece of content for a page. Blog posts took on longer form because there was a bit of difficulty in accessing and publishing on these sites. But once shared, the ideas could be virtually infinit because of the cheapness of expressing simple text thoughts. The result is that individual user content took the form of blogs that are structured in a more stream of consciousness manner. Lots more raw materials being thrown at the canvas of creativity. Blogging in this manner and publishing content was likely a bit more like the journaling process than the content creation process.
-
-### Antithesis, or the Yin of Web 2.0
-
-Digital minimalism. What I consider to be the modern web is the set of sites that have allowed user experience to be a first-class citizen. This is performed through a linking of human cognitiion and the experience they undrego on a webpage. A perfect example of the digital minimalism that embodies the modern web is Google. The page is essentially a single search bar at its core. But it is also a canvas. The modern web is characterized by a minimalism of design that allows for visual creativity and expressiveness to package ideas in a way that was completely missing from the early web. 
-
-JS. One thing that is worth noticing about the modern web is that, since the goal is expressiveness around the user experience, some of the semantics of the internet have been fudged a bit in order to focus on design. JavaScript was introduced to the web in 1995 but exploded throughout the early aughts when developers discovered it could be used to make the web responsive. Webpages became far more dynamic and allowed not only improved design to reach the web, but for that design to be responsive. 
-
-The rise of the div. How is JavaScript able to manipulate the web so effectively? Well one pattern that has emerged is the heavy use of the `<div>` tag in web development. JS is extremely effective at moving around and editing `<div>`-contained content and as such, most of the web you see today is build with `<div>`s as the lego blocks of the internet. This isn't a bad thing on its face either. Heck, most of the design I do on the web prominently features `<div>`s. This is because HTML tags were created to...well...mark up text. The internet today has so much more than text built into it. Take this site, for example. There isn't an HTML tag that defines `<particle-background>`, so I (with help from [libary](https://www.npmjs.com/package/react-particles-js) maintainers!) had to get creative with `<div>`s.
-
-Because of this increased demand for a visually pleasant user experience, design systems have been created and employed by corporations that have helped build the web. The web looks a lot better today because the psychology of advertising and user experience has been brought from the world of marketing. Businesses did not have much interest in having a presence on the early web, but now the opportunity for capital from the web has been made abundantly clear. This is a bit of a double-edged sword. It means, of course, that more of the internet is now devoted to advertising and controlling a user experience in a way that results in sales conversions. But it also means that everyman developers like myself have access to the same tools that corporations use to build the largest retail sites and markets in the world. Yes, corporations moving online meant that some space had to be carved out in the internet zeitgeist for these corporations to continue to sell ads and products. But at the same time corporations couldn't help but have the open-source pioneering spirit of the internet rub off on them in the process of moving to online bases. 
-
-Tech that embodies Web 2.0. There are some sites and patterns that I feel typify the modern web. I'll talk about two main ones here. 
-
-Social Media. Social media is the first concept that embodies the modern web. Social media was able to take one of the hardest-to-define principles of the early web and expand on it. That principle is the ease of content generation. Anyone can easily sign up on Twitter today and immediately publish a thought that is publicly available on the internet. But these social media sites have become a bit of a wrapper around content. Sort of like a mini internet itself. Social media platforms like Facebook, Twitter, and Instagram have a bit of a feeling that your content is not necessarily published on the internet, but on that respective social media platform. 
-
-Meditativeness of creation and consumption. In addition to this platform-specific idea encapsulation, the style of content is much different on the modern web. Content is much more visually-based and is typically shortened. The purpose is two-fold: to allow a vaster portion of the public to share ideas and thus decrease storage size, and to improve the user experience of the person consuming the content. It's far easier both to create a 285-character tweet and to read it. Content has a much more stream-like structure and is meant to be very easily digestible. This isn't a bad thing at all, and in a lot of ways it allows for much more lateral thinking creativity from people producing content. For an example of this take a look at Reddit's current UI. Contrast that with the earlier text-forward site and we start to see what values have been selected for in the modern web. 
-
-Hosting (hardware as a service). The other pattern that demonstrates the state of the modern web, in my opinion, is web hosting. It's an industry that was, quite literally, created as a budded lifeform off of some of the first internet companies. It's no surprise that Amazon, Google, and Microsoft offer the largest cloud hosting infrastructure on the planet -- they were some of the most successful early adopters of the online business model. We're extremely lucky to have access to these hosting services and they make not only content publishing easier, but the entire process of creating platforms for online thought sharing. 
-
-The Zen of a good user experience. 
-
-### Synthesis, or the Taiji of Web 3.0
-
-Mindful things from Web 1.0 & 2.0. The content generation process and the content consumption processes both required a fair amount of thoughtfulness. This isn't something that is completely missing from Web 2.0. You can still read longform articles. But they tend to be produced by corporations coming from different mediums and include things like paywalls. News sites are caught between a rock and a hard place when considering an ad-free experience to preserve the density of information that was found in print newspapers and being able to deliver that to users without a paywall. It's easier both cognitively and technologically for a user to read 5,000 words a day on Twitter, than it is for them to read the same amount over a couple of posts or articles. This means that we consume ideas from other people much more like a stream than like a narrative. Single disparate thoughts create a bit of an unfulfilled feeling when browsing them for a long time, but they're intensely easy to consume and the lack of division between thoughts means this can be done for long periods of time. People tend to find much more satisfaction from consuming a larger volume of ideas within a specific piece of media (like this blogpost hopefully). We're at an odd juncture for neuroscience on the web because we've made it incredible easy to consume a vast amount of information, but without the satisfaction that usually comes from doing so (such as reading a book or watching a movie). The human mind has been allowed to experience extremely thoughtfully designed visual narratives as we navigate sites on the modern web, but in the future I think this visual narrative can be combined with thoughtful narrative of text as well in a way that allows content to be satisfying over longer stretches of consumption. 
-
-What are some technologies bridging the gap to Web 3.0?. 
-
-Machine Learning. Underpinning this mindfulness will be entirely different platforms for deliving content. Content suggestion has already been ingratiated into almost every platform we use on the web today via machine learning suggestion engines. This delivers content in a way that is extremely optimized for the user to be intrigued at a glance, but I'm not sure that it leads to a diversity of ideas that leaves people most satisfied. For example, Spotify is one of the premier creators of suggestion algorithms and they do an incredible job of it. But I think an integral part of the human experience is the ability to surf. The beauty of a minimally suggestive web is that it can spread all of your options out for you and allow you to define which of them you might like without locking you into those preferences. People are not static entities -- they're constantly changing -- and I think the future of the web will allow for this dynamic nature of the human mind to lead to more satisfying interactions with the web. 
+For example, Spotify heavily utilizes suggestion algorithms and they do an incredible job of it. But I think an integral part of the human experience is the ability to surf. The beauty of a minimally suggestive web is that it can spread all of your options out for you and allow you to define which of them you might like without locking you into those preferences. People are not static entities -- they're constantly changing -- and I think the future of the web will allow for this dynamic nature of the human mind to lead to more satisfying interactions with the web. 
  - OpenAI
  - fast.ai
 
-Semantic Web. Sometimes the desire to creat a visually pleasant web experience can burrow our design into traps. It's easy to design a site that is beautiful and responsive. But the second another device is used or the screen size changes, we see behavior we didn't account for. If someone were to use a screen-reader on the modern web they would be met with an almost incomprehensible slog of anonymous `<div>` tags that don't seem to represent any coherent path through the page. Design systems can be extremely useful for mitigating this, and indeed I think the reliance on these systems will continue to grow as the web expands to get responsive design principles for free, but we need to see an increased effort to make design accessible and semantic. The semantic web is the way forward. This is especially important if we consider the [right to scrape](https://parsers.me/us-court-fully-legalized-website-scraping-and-technically-prohibited-it/). It's easier now than ever before for information to be scraped from the web for an infinitude of purposes. And this is despite the difficulty of parsing the web semantically. I think in the future we should strive to create a web that makes sense to machines as well as people. With Web 2.0 we made an internet that is extremely easy to use for humans, but I think as time goes on and more people use other sites' APIs and data as tools to build new programs and tools of their own, we need to see a shift towards creating sites that can algorithmically be parsed. This lends to the idea of accessibility as well. If a site can be easily parsed to scrape data, then it can be easily parsed to read contents to a disabled user. 
+### The Semantic Web
+Sometimes the desire to creat a visually pleasant web experience can burrow our design into traps. It's easy to design a site that is beautiful and responsive. But the second another device is used or the screen size changes, we see behavior we didn't account for. If someone were to use a screen-reader on the modern web they would be met with an almost incomprehensible slog of anonymous `<div>` tags that don't seem to represent any coherent path through the page. Design systems can be extremely useful for mitigating this, and indeed I think the reliance on these systems will continue to grow as the web expands to get responsive design principles for free, but we need to see an increased effort to make design accessible and semantic. The semantic web is the way forward. This is especially important if we consider the [right to scrape](https://parsers.me/us-court-fully-legalized-website-scraping-and-technically-prohibited-it/). It's easier now than ever before for information to be scraped from the web for an infinitude of purposes. And this is despite the difficulty of parsing the web semantically. I think in the future we should strive to create a web that makes sense to machines as well as people. With Web 2.0 we made an internet that is extremely easy to use for humans, but I think as time goes on and more people use other sites' APIs and data as tools to build new programs and tools of their own, we need to see a shift towards creating sites that can algorithmically be parsed. This lends to the idea of accessibility as well. If a site can be easily parsed to scrape data, then it can be easily parsed to read contents to a disabled user. 
 
-IoT. An area that's auxiliary to the idea of the semantic web and the right to scrape is the Internet of Things. As sensors are connected to the web in new ways, the data gathered on users of the web will change. I also think this will come with some unexpected restructuring around some of the experiences we have on the web. No longer will ideas being shared on the web be limited to files living on servers. Users will be able to generate content from devices that interact with the world around them and broadcast information of a very different type. This is definitely an area that captures the same pioneering style that I discussed in Web 1.0. Similarly, there is a technological barrier to entry. That means that most of the consumer-level IoT devices are implemented by intellectually curious hobbyists. Just like the early days of the internet. Devices like the Arduino and the Particle both are lowering that technological barrier to entry, but there's still a long way to go before we reach the ease-of-use that the modern web offers for networking ideas and social experiences.
+### The Internet of Things (IoT)
+An area that's auxiliary to the idea of the semantic web and the right to scrape is the Internet of Things. As sensors are connected to the web in new ways, the data gathered on users of the web will change. I also think this will come with some unexpected restructuring around some of the experiences we have on the web. No longer will ideas being shared on the web be limited to files living on servers. Users will be able to generate content from devices that interact with the world around them and broadcast information of a very different type. This is definitely an area that captures the same pioneering style that I discussed in Web 1.0. Similarly, there is a technological barrier to entry. That means that most of the consumer-level IoT devices are implemented by intellectually curious hobbyists. Just like the early days of the internet. Devices like the Arduino and the Particle both are lowering that technological barrier to entry, but there's still a long way to go before we reach the ease-of-use that the modern web offers for networking ideas and social experiences.
 
-Decentralization. The final technology that I think is taking its first steps before it begins leaping and bounding is decentralization of the web. The decentralized web resembles Machine Learning to me more than any other principle. In the same way that research in machine learning had been going on since the dawn of computers but has only recently become advanced enough to use in an everyday setting, so too decentralized computing has been around in the shadows. Probably the largest usecase for decentralized storage and computation is that of Peer-to-Peer networking, used in torrent hosting and sharing. It's mostly existed as a sort of toy on the internet and only seen adoption as a platform by a few select hobbyists. This is extremely reminiscient of the early internet and I think we will see the platform made huge strides in the coming years. Just as machine learning went from an academic study to a practical tool in the form of dev libraries like PyTorch, Tensorflow/Keras, and fast.ai, I think decentralized infrastructure will be granted a platform for easy access to content generation and consumption. Lots of infrastructure pushes for this have already begun. Tim Berners-Lee, the inventor of the world-wide web has invested a significant amount of time and capital into creating Inquit, a start-up build around the decentralized platform Solid. In addition, the Interplanetary File System project has been gaining momentum in the past few years. I think somewhere in the primordial soup of these blossomming decentralized platforms lies the future of the internet as we know it.
+### Decentralization
+The final technology that I think is taking its first steps before it begins leaping and bounding is decentralization of the web. The decentralized web resembles Machine Learning to me more than any other principle. In the same way that research in machine learning had been going on since the dawn of computers but has only recently become advanced enough to use in an everyday setting, so too decentralized computing has been around in the shadows. Probably the largest usecase for decentralized storage and computation is that of Peer-to-Peer networking, used in torrent hosting and sharing. It's mostly existed as a sort of toy on the internet and only seen adoption as a platform by a few select hobbyists. This is extremely reminiscient of the early internet and I think we will see the platform made huge strides in the coming years. Just as machine learning went from an academic study to a practical tool in the form of dev libraries like PyTorch, Tensorflow/Keras, and fast.ai, I think decentralized infrastructure will be granted a platform for easy access to content generation and consumption. Lots of infrastructure pushes for this have already begun. Tim Berners-Lee, the inventor of the world-wide web has invested a significant amount of time and capital into creating Inrupt, a start-up built around the decentralized platform [Solid, which is a decentralized platform built at MIT](https://www.fastcompany.com/90243936/exclusive-tim-berners-lee-tells-us-his-radical-new-plan-to-upend-the-world-wide-web). In addition, the Interplanetary File System project has been gaining momentum in the past few years. I think somewhere in the primordial soup of these blossomming decentralized platforms lies the future of the internet as we know it.
  - Zines
  - Cryptocurrency
  - Mastodon
 
-Design principles. So are we doomed to face the exact same cycle of pure text-based content followed by an eventual corporate stimulus of design for the decentralized web? I don't think so. We've learned a ton about creating forums for ideas on the web that can be transferred to the decentralized web. But my hope is that we move towards this new incarnation of the internet with the human experience in mind and not just the experience of a user being guided to a sale. The decentralized web brings an incredible opportunity to improve upon the internet as we know it today and reclaim some sovereinty over the content that we consume and generate therein. I believe that the decentralization of the web will rekindle some of the curiosity that pushed us onto the web at its inception. And that we will be able to create a more satisfying experience for people connecting and sharing their thoughts and innovations on the web. 
+### Some Final Design Principles
+So are we doomed to face the exact same cycle of pure text-based content followed by an eventual corporate stimulus of design for the decentralized web? I don't think so. We've learned a ton about creating forums for ideas on the web that can be transferred to the decentralized web. But my hope is that we move towards this new incarnation of the internet with the human experience in mind and not just the experience of a user being guided to a sale. The decentralized web brings an incredible opportunity to improve upon the internet as we know it today and reclaim some sovereinty over the content that we consume and generate therein. I believe that the decentralization of the web will rekindle some of the curiosity that pushed us onto the web at its inception. And that we will be able to create a more satisfying experience for people connecting and sharing their thoughts and innovations on the web. 
 
 As a disclaimer for this post, I want to make it clear that I do not practice every single thing that I've preached in this post. I am working on improving the accessibility of my site for text-based users and I use a hosting service with a static site generator to alleviate much of the work for myself. In the future I will be looking into things like Bearblog for creating a text-friendly alternate to my personal site, but for the time being I'm just a frontend developer who is trying to share some things I've noticed.
 
