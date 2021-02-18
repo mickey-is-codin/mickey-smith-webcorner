@@ -29,7 +29,7 @@ body {
 
 /* Headers */
 .markdown h1 {
-  @apply text-xl my-6 font-semibold;
+  @apply text-xl my-6 text-green-400;
 }
 .markdown h2 {
   @apply text-xl my-6 font-semibold;
@@ -49,13 +49,13 @@ body {
 
 @screen sm {
   .markdown h1 {
-    @apply text-2xl;
+    @apply text-2xl text-green-400;
   }
   .markdown h2 {
-    @apply text-2xl;
+    @apply text-2xl text-green-400;
   }
   .markdown h3 {
-    @apply text-xl;
+    @apply text-xl text-green-400;
   }
   .markdown h4 {
     @apply text-xl;
@@ -70,7 +70,7 @@ body {
 
 /* Links */
 .markdown a {
-  @apply text-white;
+  @apply text-theme-3;
 }
 .markdown a:hover {
   @apply text-green-500;
@@ -120,6 +120,14 @@ body {
 }
 .markdown table {
   @apply mb-6;
+}
+
+.markdown img {
+  @apply mx-auto;
+}
+
+.markdown code {
+  @apply text-theme-3;
 }
 
 /* Wrap any inline highlights `that are really long`, but don't modify
