@@ -1,16 +1,101 @@
 ---
 slug: /blog/notes-workflow
 title: How I Take Notes
-description: How some well-intentioned chaos can make your notes more effective
-date: 2021-02-02
-isBlogPost: false
+pageTitle: Notes
+description: How structured chaos can lead to better ideas
+date: 2021-02-19
+isBlogPost: true
 ---
 
-# Outline
- - Good ideas
- - How graphical notetaking helps this process
- - Some background on me liking structure
- - Foam notebook setup
- - Physical notebook setup
+![A big, highly connected network with a bunch of nodes arranged in a big circlular shape -- all of my notes for the past couple years, visualized](https://i.imgur.com/dbX54gl.png)
 
-# Article Text
+## TL;DR
+I use an open-source graphical note-taking VSCode extension called [Foam](https://foambubble.github.io/foam/) to create, link, and visualize ideas and notes. Then I use a [regular paper notebook](https://www.amazon.com/Moleskine-Classic-Cover-Notebook-Dotted/dp/B015NG44E8) to journal and reflect on new connections between ideas that show up in my Foam notes.
+
+<div id="messes-good-ideas"></div>
+
+<br/>
+<br/>
+<hr/>
+<div>
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#messes-good-ideas">Messes Breed Good Ideas</a></li>
+    <li><a href="#serenity-structure">The Serenity of Structure</a></li>
+    <li><a href="#messes-graphs">Controlling Messes with Graphs</a></li>
+    <li><a href="#implicit-explicit-structure">Implicit vs. Explicit Structure</a></li>
+    <li><a href="#neuroscience">Neuroscience and Graphs</a></li>
+    <li><a href="#physical-digital-notes">Integrating Physical and Digital Notes</a></li>
+  </ul>
+</div>
+
+## Messes Breed Good Ideas
+Early last year I read the book [Where Good Ideas Come From](https://www.amazon.com/Where-Good-Ideas-Come-Innovation/dp/1594485380). I tend to prefer fiction books for my non-educational reading outside of work and school, but this one came highly recommended and I found myself agreeing with a lot of the takeaways. One of the key concepts of the book that I've been mulling over in my head is the importance of *messes*. Well -- messes of ideas and objects that relate to ideas. 
+
+Messes help to facilitate the cross-pollination of ideas. If things become too organized, then arbitrary divisions between topics can start to form in your head. When objects and ideas aren't stored in an organized manner, you start to conflate them and make connections that aren't obvious normally.
+
+The canonical example of the importance of a good messy environment comes from the invention of penicillin. The antibiotic was discovered by accident when Alexander Fleming came back from a vacation to find that mold had begun to form on one of his staphylococcus petri dishes due to carelessness and a contaminated lab environment. 
+
+This story follows a common pattern for many of the great inventions and discoveries in history. Over the course of human history, specialization of knowledge has become quite deep. Often you have to have a PhD and spend a career studying one topic to discover something new within that field. But frequently, quantum leaps in fields of study don't come about from pure immersion into that topic. Quite often, ideas that shake industries and human technology come from some foreign catalyst that has nothing to do with the topic at hand. Breakthroughs tend to happen when an immersed mind is allowed to breathe briefly. 
+
+<div id="serenity-structure"></div>
+
+This kind of environment can be recreated for anyone with a bit of thoughtfulness and structure. In order to achieve that environment, you just have to organize deep thoughts a bit carelessly.
+
+## The Serenity of Structure
+All of this isn't to say that you should leave your computer and go throw things around in your place of living. I don't want to make it seem like I'm giving excuses to live in a pig sty in the hope of striking intellectual gold. I'm actually a person who really thrives on structure and order. I find that I'm freer to think about things when I have a blank canvas of physical space. Messes tend to distract me and bring a bit of unnecessary stress to my life. I like things like filesystems for organizing ideas and try to keep a very clean computer layout. I pride myself on being able to clear my mind until I need to index things. It's for this reason that I've kept a moleskine journal for the past seven years or so.
+
+<div id="messes-graphs"></div>
+
+But there is one concept that I like even more than neatness -- graphs.
+
+## Controlling Messes with Graphs
+Graphs have a way of imposing order on chaos.
+
+Graphs and networks have been a fascination of mine since I began programming. I read and loved [Barabási's Network Science Book](http://networksciencebook.com/) while I was an undergrad. I can't recommend it enough if you're even moderately interested in the modeling of phenomena through graphs. I have an on again, off again relationship with [Daphne Koller's Probabilistic Graphical Modeling course](https://www.youtube.com/watch?v=GqMzbbaN6T4&list=PLzERW_Obpmv-_TkPEmCyzaJUGHtl7S01i). Hell, I'm using a particle background on this site. In general, I'm drawn to them like a moth to a flame. There's just something satisfying about the structure of a graph and the mathematical properties that they contain. They feel like a tool that can solve most problems that a social species like humanity might run up against.
+
+As someone who enjoys a good graph, imagine my luck when I found out that graphical notetaking has been finding a foothold in tech employees for the past couple years. 
+
+Even before I read _Where Good Ideas Come From_, I began looking into graphical notetaking. I am an avid physical notetaker and I enjoy the therapeutic benefits of journaling, but at the end of the day, it's much faster for me to take down and organize information on a computer. I had heard of people using [Org Mode for Emacs](https://orgmode.org/) for years. But even before I picked up my VSCode habit I was a consistent Vim user. On top of that, org mode is great but in my experience it offered some odd markdown nuances and didn't lend itself to visualization. As a purely text-based note system though, it seemed pretty cool. 
+
+Eventually a coworker showed me [Roam Research](https://roamresearch.com/). It's a platform that offers graphical notetaking by adding the ability to create links between pages of notes. Once you've linked your notes you can review things in a graphical format by viewing the landscape of your ideas. I read the [whitepaper on the ideas behind Roam](https://roamresearch.com/#/app/help/page/Vu1MmjinS) and signed up for an early version of the app. I didn't realize it at the time, but I was starting to embrace messes. I just didn't know it because in a graph, all the nodes in the mess are linked.
+
+Unfortunately, when I attempted to show Roam to a friend a couple months later I noticed that it had begun to charge for the app. I sought out a free version and fell in love with [Foam](https://foambubble.github.io/foam/). The main reasons I made the switch were:
+ - Foam is free
+ - Foam is open-source
+ - VSCode editing (text manipulation and color themes)
+ - Foam notes are git-tracked
+ - Foam notes live in my filesystem
+
+<div id="implicit-explicit-structure"></div>
+
+And so far I've been absolutely loving the app. It's been a staple in my daily notes for everything from work ticket tracking to personal projects management to general scratch for random ideas and essays. 
+
+## Implicit vs. Explicit Structure
+One thing that drew me to Foam over Roam was the idea that I could keep my notes in my filesystem and organize them as I pleased in directories, while maintaining connections between them. This let me easily find notes on any topic since each group of notes was organized by topic. Then I could still see in the visual graph how they linked to things. 
+
+As I adopted this filesystem approach to my notes I started to notice the shape of the graph changing though. 
+
+I was accidentally recreating my filesystem in my notes graph! When I split my notes up between directories I noticed that they began to constellate and take on some explicit structure. At first, I was enamored with the constellations forming out of my notes. What I didn't realize was that these constellations meant I was losing all of the benefits of a graphical notetaking system. I was essentially creating a file system tree instead of a true network of my thoughts.
+
+It was right around the time that I switched to Foam that I started reading _Where Good Ideas Come From_. The book gave me the epiphany that I needed to realize the errors in the way I was organizing my notes. Understanding the importance of cross-pollinating ideas gave me a new perspective on the purpose of my notes. They shouldn't be a series of unrelated ideas that only connect within a category, that's too neat. Notes should be *messy*. The structure of your notes should come passively and that is the point of being able to link between any pair of notes. 
+
+I did the only thing that I could think of to impose a mess on my beautiful over-organized notes directories. I dumped all the hundreds of .md files into one monolithic directory so that they would be forced to cross-pollinate. Reviews of books I've read adjacent to work ticket notes, adjacent to descriptions of fun nights out. This started to give me more license to connect notes that would not normally be linked. I started to wander through my notes and thus my thoughts instead of parsing through them like a binary tree traversal. And, of course, VSCode still allows for targeted searching within all my notes quite easily.
+
+<div id="neuroscience-graphs"></div>
+
+## Neuroscience and Graphs
+As I began to think on this implicit structure and organization of my notes, I started making more and more connections to the human brain. I started thinking about the allure of a good notetaking system and why I and others like myself are drawn to the concept. I think there's a certain calm that comes from knowing that ideas have been taken down. It's like writing to local memory when we've been storing too much information in RAM. A notetaking system allows us to create a new brain that's on paper. One that we can look at whenever we want to hone in on a specific pattern of thoughts, rather than have the ideas float around in our brain.
+
+And of course, there are a ton of people who have already made the connection between notes and how they map the human brain. The concept of a [second brain](https://www.buildingasecondbrain.com/) that exists on paper is closely linked with the idea of [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten). It was originally invented as a primitive link-based note-taking system and has since become a common tool for people of all disciplines to organize their thoughts. Roam and Foam are both Zettelkasten systems since they allow notes to link between each other. 
+
+What I started to realize as I shifted my notes more towards a messy single-directory approach, was that I had accidentally laid them out more similarly to the human brain. My education is in Biomedical Engineering so I tend to fall back to the human body for modeling a lot of phenomena and hearing some of the concepts of the second brain brought me back to some days in the lab. I started to make connections between the jumbled mass of notes that I was creating and a technique called functional magnetic resonance imaging, or fMRI. 
+
+The main idea of fMRI is the mapping of brain function based on where blood is flowing in the brain at a given time. This method has allowed neuroscientists to map all sorts of human thought patterns to areas within the brain. This structural/locational linking has led to more targeted treatment of cognitive conditions. But what's interesting about fMRI is that it allows analysis of the implicit structure of the brain rather than the explicit physical structure. The brain's functional structure is defined only by the connections between various areas and has vague relation to the physical layout. We can say general things like "Wernicke's area controls speech and that's roughly *here*", but with fMRI, we can analyze the connections being made in the brain to know exactly which areas are being engaged during a series of thoughts. 
+
+<div id="physical-digital-notes"></div>
+
+The brain is essentially a big unorganized mess of neurons from which order emerges when you track the flow of ideas. When you track how things are moving around and mixing within that mess, then it becomes a graph. 
+
+## Integrating Physical and Digital Notes
+So at after figuring all this out there was only one piece left out of my notetaking puzzle. The importance of physical notetaking and fitting my moleskine into the whole routine. I knew there was somewhere that it would fit and cognitively some way to reap the benefits of physical notes and journaling while also maintaining a graphical note system.
