@@ -38,7 +38,7 @@ export const PageContainer: React.FC<PageContainerProps> = (props) => {
       </div>
       <div className="z-0">
         <Particles
-          className="absolute top-0 left-0 w-full h-full"
+          className="fixed top-0 left-0 w-full h-full"
         />
       </div>
     </div>
