@@ -1,5 +1,4 @@
 import React from 'react';
-import Particles from 'react-particles-js';
 import Navbar from './Navbar';
 import { Helmet } from 'react-helmet';
 import { MetadataProp } from '../util/types';
@@ -35,11 +34,6 @@ export const PageContainer: React.FC<PageContainerProps> = (props) => {
         <div className={innerClassName}>
           {children}
         </div>
-      </div>
-      <div className="z-0">
-        <Particles
-          className="fixed top-0 left-0 w-full h-full"
-        />
       </div>
     </div>
   );

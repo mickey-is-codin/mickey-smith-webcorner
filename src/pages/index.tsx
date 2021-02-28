@@ -11,9 +11,6 @@ import {
 import { HOME_METADATA } from '../util/constants';
 import { IconType } from 'react-icons/lib';
 
-// Markdown styling better
-// Class unification
-
 interface PageLinkProps {
   href: string;
   linkText: string;
@@ -46,9 +43,9 @@ const SocialMediaIcon: React.FC<SocialMediaIconProps> = (props) => {
 const Index: React.FC = (props) => {
   return (
     <PageContainer metadata={HOME_METADATA} >
-      <div className="flex flex-col lg:flex-row">
-        <h1 className="flex-1 text-3xl">Mickey Smith - Software Developer</h1>
-        <div className="flex-0 flex ml-auto">
+      <div>
+        <div className="my-4"><h1 className="text-xl sm:text-3xl">Mickey Smith - Software Dev</h1></div>
+        <div className="flex ml-auto">
           <SocialMediaIcon 
             href="https://github.com/mickey-is-codin"
             IconComponent={AiFillGithub}
