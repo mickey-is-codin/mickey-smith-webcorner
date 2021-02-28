@@ -6,7 +6,7 @@ body {
   background-color: #403d34;
   /* background-color: #fffffb; */
   /* font-family: "Futura", georgia, serif; */
-  font-family: "Open Sans";
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Markdown Styles */
