@@ -71,7 +71,7 @@ export const PROJECTS: Project[] = [
   {
     title: "The Dinogram",
     description: "A newsletter turned website about what came before us",
-    link: "https://www.dinogram.org/timeline",
+    link: "https://www.dinogram.org",
   },
   {
     title: "Foam-MRI",
