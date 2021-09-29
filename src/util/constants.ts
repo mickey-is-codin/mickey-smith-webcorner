@@ -1,5 +1,5 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
-import { Experience, Project, MetadataProp, SocialMediaInfo, PageLinkInfo, NavbarPageInfo, LikedSitesInfo } from './types';
+import { Experience, Project, MetadataProp, SocialMediaInfo, PageLinkInfo, NavbarPageInfo, LikedSitesInfo, ReadBooksInfo } from './types';
 
 // Home Page
 export const HOME_LINK = '/';
@@ -40,6 +40,11 @@ export const PAGE_LINKS: PageLinkInfo[] = [
     title: "Sites",
     name: "links to other sites I like",
     link: "/sites",
+  },
+  {
+    title: "Books",
+    name: "books that I've read",
+    link: "/books",
   },
   {
     title: "Projects",
@@ -88,7 +93,7 @@ export const SITES_METADATA: MetadataProp = {
   meta: [
     {
       name: "Sites I Like",
-      content: "Test description",
+      content: "A list of sites I frequent",
     },
     {
       name: "keywords",
@@ -97,8 +102,8 @@ export const SITES_METADATA: MetadataProp = {
   ],
 };
 
-export const SITES_TITLE = "Some Sites I Like";
-export const SITES_SUB_TITLE = "A list of websites that I enjoy";
+export const SITES_TITLE: string = "Some Sites I Like";
+export const SITES_SUB_TITLE : string= "A list of websites that I enjoy";
 export const SITES_INTRO: string = `The internet, at its best, is a series of rabbitholes. Here are some of sites that have led me down the most fun rabbitholes.`;
 
 export const LIKED_SITES: LikedSitesInfo = [
@@ -403,7 +408,56 @@ export const LIKED_SITES: LikedSitesInfo = [
 ];
 
 // Books
+export const BOOKS_METADATA: MetadataProp = {
+  title: "Books",
+  meta: [
+    {
+      name: "Books I've Read",
+      content: "Test description",
+    },
+    {
+      name: "keywords",
+      content: "mickey,smith,code,software,react,js,javascript",
+    },
+  ],
+};
 
+export const BOOKS_TITLE: string = "Books That I've Read";
+export const BOOKS_SUB_TITLE: string = "A list of books I've read";
+export const BOOKS_INTRO: string = `Here are the books`;
+
+export const READ_BOOKS: ReadBooksInfo = [
+  {
+    title: "2021",
+    description: ``,
+    books: [
+      {
+        title: "",
+        link: "",
+      },
+    ],
+  },
+  {
+    title: "2020",
+    description: ``,
+    books: [
+      {
+        title: "",
+        link: "",
+      },
+    ],
+  },
+  {
+    title: "Pre-2020",
+    description: `It's important to read articles that aren't just caffeine-fuelled wrappers around code snippets:`,
+    books: [
+      {
+        title: "Urth List",
+        link: "http://urth.net/",
+      },
+    ],
+  },
+];
 
 // Projects
 export const PROJECTS: Project[] = [

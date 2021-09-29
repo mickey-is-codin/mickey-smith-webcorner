@@ -53,3 +53,16 @@ export interface LikedSiteInfo {
 };
 
 export type LikedSitesInfo = LikedSiteInfo[];
+
+export interface BookInfo {
+  title: string,
+  link: string;
+};
+
+export interface ReadBookInfo {
+  title: string;
+  description: string;
+  books: SiteInfo[];
+};
+
+export type ReadBooksInfo = ReadBookInfo[];

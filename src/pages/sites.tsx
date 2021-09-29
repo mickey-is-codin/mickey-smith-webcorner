@@ -6,7 +6,6 @@ import {
   SITES_INTRO,
   SITES_METADATA,
   SITES_TITLE,
-  SITES_SUB_TITLE,
 } from '../util/constants';
 import '../styles/global.css';
 
