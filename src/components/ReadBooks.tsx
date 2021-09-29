@@ -10,10 +10,10 @@ const SitesSection = (props: ReadBookInfo) => {
       <h2 className="text-xl mt-6 mb-4 font-semibold sm:text-2xl text-white">{title}</h2>
       <p className="mb-2">{description}</p>
       <ul className="mb-4 ml-8">
-        {books.map(({ title, link }) => {
+        {books.map(({ title, author, link }) => {
           return (
             <li className="sm:my-2" key={`site-link-${title}`}>
-              <a className="text-theme-3 hover:text-green-500" href={link}>{title}</a>
+              <a className="text-theme-3 hover:text-green-500" href={link}>{`${title} by ${author}`}</a>
             </li>
           );
         })}

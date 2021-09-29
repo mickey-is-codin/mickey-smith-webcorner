@@ -55,14 +55,17 @@ export interface LikedSiteInfo {
 export type LikedSitesInfo = LikedSiteInfo[];
 
 export interface BookInfo {
-  title: string,
+  title: string;
+  author: string;
+  year: number;
   link: string;
+  review: string;
 };
 
 export interface ReadBookInfo {
   title: string;
   description: string;
-  books: SiteInfo[];
+  books: BookInfo[];
 };
 
 export type ReadBooksInfo = ReadBookInfo[];
