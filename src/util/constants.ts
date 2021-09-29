@@ -3,6 +3,7 @@ import { Experience, Project, MetadataProp, SocialMediaInfo, PageLinkInfo } from
 
 // Home Page
 export const SITE_TITLE: string = "Mickey Smith - Software Developer";
+export const SITE_SUB_TITLE: string = "A personal site for ..."
 
 export const SOCIAL_MEDIA: SocialMediaInfo[] = [
   {

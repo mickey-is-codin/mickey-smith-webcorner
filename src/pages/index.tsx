@@ -5,7 +5,14 @@ import Posts from '../components/Posts';
 import SiteTitle from '../components/SiteTitle';
 import SocialMediaIcons from '../components/SocialMediaIcons';
 import PageLinks from '../components/PageLinks';
-import { HOME_METADATA, SOCIAL_MEDIA, SITE_TITLE, PAGE_LINKS } from '../util/constants';
+import {
+  HOME_METADATA,
+  SOCIAL_MEDIA,
+  SITE_TITLE,
+  SITE_SUB_TITLE,
+  PAGE_LINKS
+} from '../util/constants';
+import SiteSubTitle from '../components/SiteSubTitle';
 
 const Index: React.FC = (props) => {
   return (
@@ -15,7 +22,7 @@ const Index: React.FC = (props) => {
         <SocialMediaIcons data={SOCIAL_MEDIA} />
       </div>
       <div className="flex flex-col sm:flex-row rounded-lg my-8 p-8">
-        <h2 className="flex-1 text-2xl my-auto text-center">A personal site for ...</h2>
+        <SiteSubTitle data={SITE_SUB_TITLE} />
         <PageLinks data={PAGE_LINKS} />
       </div>
       <Posts {...props} />
