@@ -1,3 +1,5 @@
+import { IconType } from "react-icons/lib";
+
 export interface Experience {
   title: string;
   company: string;
@@ -20,4 +22,15 @@ export interface SubMetadata {
 export interface MetadataProp {
   title: string;
   meta: SubMetadata[];
+};
+
+export interface SocialMediaInfo {
+  name: string;
+  icon: IconType;
+  link: string;
+};
+
+export interface PageLinkInfo {
+  name: string;
+  link: string;
 };

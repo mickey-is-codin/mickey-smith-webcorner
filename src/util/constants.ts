@@ -1,5 +1,50 @@
-import { IParticlesParams } from 'react-particles-js';
-import { Experience, Project, MetadataProp } from './types';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
+import { Experience, Project, MetadataProp, SocialMediaInfo, PageLinkInfo } from './types';
+
+// Home Page
+export const SITE_TITLE: string = "Mickey Smith - Software Developer";
+
+export const SOCIAL_MEDIA: SocialMediaInfo[] = [
+  {
+    name: "My Github",
+    icon: AiFillGithub,
+    link: "https://github.com/mickey-is-codin"
+  },
+  {
+    name: "My Twitter",
+    icon: AiFillTwitterCircle,
+    link: "https://twitter.com/mickey_is_codin"
+  },
+  {
+    name: "My Instagram",
+    icon: AiFillInstagram,
+    link: "https://www.instagram.com/mickey_is_codin/"
+  },
+  {
+    name: "My LinkedIn",
+    icon: AiFillLinkedin,
+    link: "https://www.linkedin.com/in/mickeysmith2300/"
+  },
+];
+
+export const PAGE_LINKS: PageLinkInfo[] = [
+  {
+    name: "my blog",
+    link: "/blog",
+  },
+  {
+    name: "links to other sites I like",
+    link: "/sites",
+  },
+  {
+    name: "projects I've made",
+    link: "/projects",
+  },
+  {
+    name: "things I've done",
+    link: "/resume",
+  },
+];
 
 export const RESUME: Experience[] = [
   {
@@ -134,22 +179,6 @@ export const RESUME_METADATA: MetadataProp = {
       content: "mickey,smith,code,software,react,js,javascript",
     },
   ],
-};
-
-export const PARTICLE_PARAMS_LIGHT: IParticlesParams = {
-  particles: {
-    color: {
-      value: '#0000ff'
-    },
-    line_linked: {
-      color: {
-        value: '#0000ff'
-      }
-    },
-    size: {
-      value: 2
-    }
-  }
 };
 
 export const PAGES = [
