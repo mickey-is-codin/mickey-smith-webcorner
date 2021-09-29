@@ -1,7 +1,9 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
-import { Experience, Project, MetadataProp, SocialMediaInfo, PageLinkInfo } from './types';
+import { Experience, Project, MetadataProp, SocialMediaInfo, PageLinkInfo, NavbarPageInfo } from './types';
 
 // Home Page
+export const HOME_LINK = '/';
+
 export const SITE_TITLE: string = "Mickey Smith - Software Developer";
 export const SITE_SUB_TITLE: string = "A personal site for ..."
 
@@ -30,23 +32,85 @@ export const SOCIAL_MEDIA: SocialMediaInfo[] = [
 
 export const PAGE_LINKS: PageLinkInfo[] = [
   {
+    title: "Blog",
     name: "my blog",
     link: "/blog",
   },
   {
+    title: "Sites",
     name: "links to other sites I like",
     link: "/sites",
   },
   {
+    title: "Projects",
     name: "projects I've made",
     link: "/projects",
   },
   {
+    title: "Resume",
     name: "things I've done",
     link: "/resume",
   },
 ];
 
+export const HOME_METADATA: MetadataProp = {
+  title: "Home",
+  meta: [
+    {
+      name: "description",
+      content: "Test description",
+    },
+    {
+      name: "keywords",
+      content: "mickey,smith,code,software,react,js,javascript",
+    },
+  ],
+};
+
+// Blog
+export const POSTS_METADATA: MetadataProp = {
+  title: "Posts",
+  meta: [
+    {
+      name: "description",
+      content: "Test description",
+    },
+    {
+      name: "keywords",
+      content: "mickey,smith,code,software,react,js,javascript",
+    },
+  ],
+};
+
+// Projects
+export const PROJECTS: Project[] = [
+  {
+    title: "The Dinogram",
+    description: "A newsletter turned website about what came before us",
+    link: "https://www.dinogram.org",
+  },
+  {
+    title: "Foam-MRI",
+    description: "A Zettelkasten notes search tool",
+    link: "https://github.com/mickey-is-codin/foam-mri",
+  }
+];
+
+export const PROJECTS_METADATA: MetadataProp = {
+  title: "Projects",
+  meta: [
+    {
+      name: "description",
+      content: "Test description",
+    },
+    {
+      name: "keywords",
+      content: "mickey,smith,code,software,react,js,javascript",
+    },
+  ],
+};
+
+// Resume
 export const RESUME: Experience[] = [
   {
     title: "Software Developer",
@@ -113,61 +177,6 @@ export const RESUME: Experience[] = [
   },
 ];
 
-export const PROJECTS: Project[] = [
-  {
-    title: "The Dinogram",
-    description: "A newsletter turned website about what came before us",
-    link: "https://www.dinogram.org",
-  },
-  {
-    title: "Foam-MRI",
-    description: "A Zettelkasten notes search tool",
-    link: "https://github.com/mickey-is-codin/foam-mri",
-  }
-];
-
-export const HOME_METADATA: MetadataProp = {
-  title: "Home",
-  meta: [
-    {
-      name: "description",
-      content: "Test description",
-    },
-    {
-      name: "keywords",
-      content: "mickey,smith,code,software,react,js,javascript",
-    },
-  ],
-};
-
-export const POSTS_METADATA: MetadataProp = {
-  title: "Posts",
-  meta: [
-    {
-      name: "description",
-      content: "Test description",
-    },
-    {
-      name: "keywords",
-      content: "mickey,smith,code,software,react,js,javascript",
-    },
-  ],
-};
-
-export const PROJECTS_METADATA: MetadataProp = {
-  title: "Projects",
-  meta: [
-    {
-      name: "description",
-      content: "Test description",
-    },
-    {
-      name: "keywords",
-      content: "mickey,smith,code,software,react,js,javascript",
-    },
-  ],
-};
-
 export const RESUME_METADATA: MetadataProp = {
   title: "Resume",
   meta: [
@@ -181,11 +190,3 @@ export const RESUME_METADATA: MetadataProp = {
     },
   ],
 };
-
-export const PAGES = [
-  { title: 'Home', link: '/' },
-  { title: 'Blog', link: '/blog' },
-  { title: 'Sites', link: '/sites' },
-  { title: 'Projects', link: '/projects' },
-  { title: 'Resume', link: '/resume' },
-];

@@ -31,6 +31,12 @@ export interface SocialMediaInfo {
 };
 
 export interface PageLinkInfo {
+  title: string;
   name: string;
+  link: string;
+};
+
+export interface NavbarPageInfo {
+  title: string;
   link: string;
 };

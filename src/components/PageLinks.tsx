@@ -1,4 +1,5 @@
 import React from 'react';
+import { isNotHomeLink } from '../util/util';
 import { PageLinkInfo } from '../util/types';
 
 interface PageLinkProps {
@@ -24,15 +25,18 @@ export const PageLinks = (props: PageLinksProps) => {
 
   return (
     <div className="flex-1 my-auto text-center">
-      {data.map(({ name, link }) => {
-        return (
-          <PageLink
-            href={link}
-            linkText={name}
-            key={`page-link-${name}`}
-          />
-        );
-      })}
+      {data
+        .filter(isNotHomeLink)
+        .map(({ name, link }) => {
+          return (
+            <PageLink
+              href={link}
+              linkText={name}
+              key={`page-link-${name}`}
+            />
+          );
+        })
+      }
     </div>
   );
 };

@@ -1,7 +1,7 @@
-import React, { Props, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import { PAGES } from '../util/constants';
+import { PAGE_LINKS } from '../util/constants';
 
 // Need huge cleanup here
 
@@ -112,9 +112,9 @@ const LargeViewItems: React.FC<LargeViewItemsProps> = (props) => {
           stroke={4}
         />
       </div>) : null}
-      {PAGES.map((page) => {
+      {PAGE_LINKS.map(({ title, link }) => {
         return (
-          <LargeViewItem title={page.title} link={page.link} key={page.title}/>
+          <LargeViewItem title={title} link={link} key={title}/>
         );
       })}
     </div>
@@ -182,9 +182,9 @@ const SmallViewItems: React.FC<SmallViewItemsProps> = (props) => {
           <CloseNavbarButton onClose={() => setNavbarOpen(false)} />
           <div className="flex flex-col h-full">
             <div className="flex-0 mt-24">
-            {PAGES.map((page) => {
+            {PAGE_LINKS.map(({ title, link }) => {
               return (
-                <SmallViewItem title={page.title} link={page.link} key={page.title} />
+                <SmallViewItem title={title} link={link} key={title} />
               );
             })}
             </div>
