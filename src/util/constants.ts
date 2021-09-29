@@ -1,5 +1,5 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
-import { Experience, Project, MetadataProp, SocialMediaInfo, PageLinkInfo, NavbarPageInfo } from './types';
+import { Experience, Project, MetadataProp, SocialMediaInfo, PageLinkInfo, NavbarPageInfo, LikedSitesInfo } from './types';
 
 // Home Page
 export const HOME_LINK = '/';
@@ -57,8 +57,8 @@ export const HOME_METADATA: MetadataProp = {
   title: "Home",
   meta: [
     {
-      name: "description",
-      content: "Test description",
+      name: "Home Page",
+      content: "Home page for Mickey Smith Webcorner",
     },
     {
       name: "keywords",
@@ -72,7 +72,22 @@ export const POSTS_METADATA: MetadataProp = {
   title: "Posts",
   meta: [
     {
-      name: "description",
+      name: "Blog Posts",
+      content: "List of blog posts on this site",
+    },
+    {
+      name: "keywords",
+      content: "mickey,smith,code,software,react,js,javascript",
+    },
+  ],
+};
+
+// Sites
+export const SITES_METADATA: MetadataProp = {
+  title: "Sites",
+  meta: [
+    {
+      name: "Sites I Like",
       content: "Test description",
     },
     {
@@ -81,6 +96,314 @@ export const POSTS_METADATA: MetadataProp = {
     },
   ],
 };
+
+export const SITES_TITLE = "Some Sites I Like";
+export const SITES_SUB_TITLE = "A list of websites that I enjoy";
+export const SITES_INTRO: string = `The internet, at its best, is a series of rabbitholes. Here are some of sites that have led me down the most fun rabbitholes.`;
+
+export const LIKED_SITES: LikedSitesInfo = [
+  {
+    title: "News and Aggregators",
+    description: `Some sites that I check to see how the world is doing:`,
+    sites: [
+      {
+        title: "Chicago Tribune (Enewspaper)",
+        link: "https://www.chicagotribune.com/",
+      },
+      {
+        title: "Hacker News",
+        link: "https://news.ycombinator.com",
+      },
+      {
+        title: "The Intercept",
+        link: "https://theintercept.com/",
+      },
+      {
+        title: "OCCRP",
+        link: "https://www.occrp.org/en",
+      },
+      {
+        title: "Quanta Magazine",
+        link: "https://quantamagazine.org",
+      },
+      {
+        title: "The Gradient",
+        link: "https://thegradient.pub",
+      },
+      {
+        title: "Quantum Country",
+        link: "https://quantum.country/qcvc",
+      },
+    ],
+  },
+  {
+    title: "Text-Forward Sites",
+    description: `I a sucker for a great text-based site. Here are some of my favorites:`,
+    sites: [
+      {
+        title: "Sijmen Mulder's Text-Only Sites",
+        link: "https://sjmulder.nl/en/textonly.html",
+      },
+      {
+        title: "Readspike",
+        link: "https://readspike.com/",
+      },
+      {
+        title: "Phrack",
+        link: "http://phrack.org",
+      },
+      {
+        title: "Text Files",
+        link: "http://www.textfiles.com/",
+      },
+      {
+        title: "tildeverse",
+        link: "https://tildeverse.org/",
+      },
+      {
+        title: "tilde.club",
+        link: "http://tilde.club/",
+      },
+      {
+        title: "tilde.town",
+        link: "http://tilde.town/",
+      },
+    ],
+  },
+  {
+    title: "Books/Literature/Philosophy",
+    description: `It's important to read articles that aren't just caffeine-fuelled wrappers around code snippets:`,
+    sites: [
+      {
+        title: "Urth List",
+        link: "http://urth.net/",
+      },
+      {
+        title: "LitHub",
+        link: "https://lithub.com/",
+      },
+      {
+        title: "Daily Nous",
+        link: "http://dailynous.com/",
+      },
+      {
+        title: "Nautil.us",
+        link: "http://nautil.us/",
+      },
+      {
+        title: "History Today",
+        link: "https://www.historytoday.com/homepage",
+      },
+      {
+        title: "CheapskatesGuide",
+        link: "https://cheapskatesguide.org/",
+      },
+    ],
+  },
+  {
+    title: "Frontend Development",
+    description: `Some sites for news and tutorials around UI design and development:`,
+    sites: [
+      {
+        title: "Smashing Magazine",
+        link: "https://www.smashingmagazine.com/",
+      },
+      {
+        title: "Front End Front",
+        link: "frontendfront.com",
+      },
+      {
+        title: "LogRocket",
+        link: "blog.logrocket.com",
+      },
+      {
+        title: "Alligator.io",
+        link: "alligator.io",
+      },
+      {
+        title: "dev.to",
+        link: "dev.to",
+      },
+      {
+        title: "Best of JS",
+        link: "https://bestofjs.org/",
+      },
+      {
+        title: "ui.dev",
+        link: "https://ui.dev/blog/",
+      },
+      {
+        title: "Josh Comeau Personal Site",
+        link: "https://joshwcomeau.com/",
+      },
+    ],
+  },
+  {
+    title: "Music",
+    description: `Music blogs and record company sites are always the best way to stay up to date on sonic goings on:`,
+    sites: [
+      {
+        title: "Gorilla vs. Bear",
+        link: "https://www.gorillavsbear.net/",
+      },
+      {
+        title: "Metacritic",
+        link: "https://www.metacritic.com/browse/albums/release-date/new-releases/date?view=condensed",
+      },
+      {
+        title: "Aquarium Drunkard",
+        link: "https://aquariumdrunkard.com/",
+      },
+      {
+        title: "The Quietus",
+        link: "https://thequietus.com/",
+      },
+      {
+        title: "Brooklyn Vegan",
+        link: "https://www.brooklynvegan.com/",
+      },
+      {
+        title: "Fat Possum",
+        link: "https://www.fatpossum.com/",
+      },
+      {
+        title: "Merge",
+        link: "https://www.mergerecords.com/",
+      },
+    ],
+  },
+  {
+    title: "Longform Articles",
+    description: `Sites that emphasize longform written content:`,
+    sites: [
+      {
+        title: "Antilibraries",
+        link: "https://www.antilibrari.es/",
+      },
+      {
+        title: "Gwern",
+        link: "gwern.net",
+      },
+      {
+        title: "RibbonFarm",
+        link: "https://www.ribbonfarm.com/",
+      },
+      {
+        title: "The Browser",
+        link: "https://thebrowser.com/",
+      },
+      {
+        title: "Uncommon in Common",
+        link: "https://uncommon.cc/",
+      },
+      {
+        title: "Open Masters",
+        link: "https://www.openmasters.org/",
+      },
+      {
+        title: "SnarkMarket",
+        link: "http://snarkmarket.com/",
+      },
+      {
+        title: "Five Books",
+        link: "https://fivebooks.com/",
+      },
+      {
+        title: "Hyperlink",
+        link: "https://hyperlink.academy/",
+      },
+      {
+        title: "The Long Now",
+        link: "https://longnow.org/",
+      },
+      {
+        title: "The Stoa",
+        link: "https://www.thestoa.ca/",
+      },
+      {
+        title: "FoAM",
+        link: "https://fo.am/",
+      },
+      {
+        title: "BLDGBLOG",
+        link: "https://www.bldgblog.com/",
+      },
+      {
+        title: "Flowing Data",
+        link: "https://flowingdata.com/",
+      },
+      {
+        title: "The Pudding",
+        link: "https://pudding.cool/",
+      },
+      {
+        title: "Subpixel Space",
+        link: "https://subpixel.space/",
+      },
+      {
+        title: "Palladium Magazine",
+        link: "https://palladiummag.com/",
+      },
+      {
+        title: "Like Stories of Old",
+        link: "https://www.youtube.com/channel/UCs7nPQIEba0T3tGOWWsZpJQ",
+      },
+      {
+        title: "The School of Life",
+        link: "https://www.theschooloflife.com/",
+      },
+      {
+        title: "Everything2",
+        link: "https://everything2.com/",
+      },
+      {
+        title: "Dynamicland",
+        link: "https://dynamicland.org/",
+      },
+      {
+        title: "Edge",
+        link: "https://www.edge.org/",
+      },
+      {
+        title: "Stanford",
+        link: "https://plato.stanford.edu/index.html",
+      },
+      {
+        title: "Interintillect",
+        link: "https://interintellect.com/",
+      },
+    ],
+  },
+  {
+    title: "Webcomics",
+    description: `For the in-between times:`,
+    sites: [
+      {
+        title: "XKCD",
+        link: "xkcd.com",
+      },
+      {
+        title: "Three Word Phrase",
+        link: "threewordphrase.com",
+      },
+      {
+        title: "Saturday Morning Breakfast Cereal",
+        link: "https://www.smbc-comics.com/",
+      },
+      {
+        title: "Space Avalanche",
+        link: "http://www.spaceavalanche.com/",
+      },
+      {
+        title: "Perry Bible Fellowship",
+        link: "https://pbfcomics.com/",
+      },
+    ],
+  },
+];
+
+// Books
+
 
 // Projects
 export const PROJECTS: Project[] = [

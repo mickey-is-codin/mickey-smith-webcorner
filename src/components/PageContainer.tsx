@@ -17,6 +17,7 @@ export const PageContainer: React.FC<PageContainerProps> = (props) => {
     progressRing = false,
     children
   } = props;
+
   const innerClassName = `md:w-5/6 p-8 ${isMarkdown ? 'markdown' : ''}`;
   return (
     <div>

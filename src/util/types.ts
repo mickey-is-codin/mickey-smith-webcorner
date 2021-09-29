@@ -40,3 +40,16 @@ export interface NavbarPageInfo {
   title: string;
   link: string;
 };
+
+export interface SiteInfo {
+  title: string,
+  link: string;
+};
+
+export interface LikedSiteInfo {
+  title: string;
+  description: string;
+  sites: SiteInfo[];
+};
+
+export type LikedSitesInfo = LikedSiteInfo[];
